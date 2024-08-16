@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "Image": "blog-1.jpg",
+        "Badge": "Property",
+        "Title": "How to achieve financial independence",
+        "Content": "There are many variations of passages of lorem ipsum available.",
+        "Avatar": "avatar-01.jpg",
+        "Name": "Doe John",
+        "PostedDate": "15 Jan 2024"
+    },
+    {
+        "id": 2,
+        "Image": "blog-2.jpg",
+        "Badge": "Advantages",
+        "Title": "The most popular cities for homebuyers",
+        "Content": "There are many variations of passages of lorem ipsum available.",
+        "Avatar": "avatar-03.jpg",
+        "Name": "John",
+        "PostedDate": "15 Jan 2024"
+    },
+    {
+        "id": 3,
+        "Image": "blog-3.jpg",
+        "Badge": "Finanace",
+        "Title": "Learn how real estate really shapes our future",
+        "Content": "There are many variations of passages of lorem ipsum available.",
+        "Avatar": "avatar-05.jpg",
+        "Name": "Eric Krok",
+        "PostedDate": "15 Jan 2024"
+    },
+    {
+        "id": 4,
+        "Image": "blog-2.jpg",
+        "Badge": "Property",
+        "Title": "The most popular cities for homebuyers",
+        "Content": "There are many variations of passages of lorem ipsum available.",
+        "Avatar": "avatar-07.jpg",
+        "Name": "Francis",
+        "PostedDate": "12 May 2024"
+    },
+    {
+        "id": 5,
+        "Image": "blog-1.jpg",
+        "Badge": "Property",
+        "Title": "How to achieve financial independence",
+        "Content": "There are many variations of passages of lorem ipsum available.",
+        "Avatar": "avatar-03.jpg",
+        "Name": "Rafael",
+        "PostedDate": "13 Jan 2024"
+    }
+]

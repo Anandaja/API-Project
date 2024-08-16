@@ -1,0 +1,235 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.4/css/lightgallery.css");
+@import url("https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.4/css/lg-zoom.css");
+@import url("https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.4/css/lg-thumbnail.css");
+@import url("https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.4/css/lg-video.css");
+
+mat-select.custom-mat-select .mat-mdc-select-trigger {
+  border: 1px solid #f6f6f9;
+  border-radius: 5px;
+  height: 45px;
+  padding-right: 15px;
+  padding-left: 15px;
+  background: #f6f6f9;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+mat-option.mat-mdc-option:focus.mdc-list-item,
+mat-option.mat-mdc-option.mat-mdc-option-active.mdc-list-item {
+  background-color: #6c60fe;
+}
+
+mat-option.mat-mdc-option.mdc-list-item--selected:not(
+    .mdc-list-item--disabled
+  ):not(.mat-mdc-option-multiple) {
+  background-color: #6c60fe;
+}
+
+mat-option.mat-mdc-option.mdc-list-item--selected:not(
+    .mdc-list-item--disabled
+  ):not(.mat-mdc-option-multiple) {
+  background-color: #6c60fe;
+  color: #fff;
+}
+
+mat-option.mat-mdc-option.mdc-list-item--selected:not(.mdc-list-item--disabled)
+  .mdc-list-item__primary-text {
+  color: inherit;
+}
+
+mat-option.mat-mdc-option:hover:not(.mdc-list-item--disabled) {
+  background-color: #6c60fe;
+}
+.mat-mdc-option .mat-pseudo-checkbox-minimal {
+  display: none;
+}
+.mat-mdc-select-arrow-wrapper .mat-mdc-select-arrow {
+  color: #8a909a;
+}
+mat-option.mat-mdc-option {
+  min-height: 35px;
+  font-size: 14px;
+}
+mat-option.mat-mdc-option-active .mdc-list-item__primary-text,
+mat-option.mat-mdc-option:hover .mdc-list-item__primary-text {
+  color: #fff;
+}
+.mat-mdc-select-trigger .mat-mdc-select-value {
+  font-size: 14px;
+  color: #0e0e46;
+}
+.mat-mdc-select-trigger .mat-mdc-select-placeholder {
+  color: #0e0e46;
+  font-size: 14px;
+}
+.collapse-card ul li span.mat-mdc-select-min-line {
+  font-size: 14px;
+}
+.stickybar {
+  position: sticky;
+  top: 0;
+}
+.rental-slider .slick-next:before {
+  color: black;
+}
+.rental-slider .slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+.testimonial-slider .owl-nav div.owl-prev,
+.testimonial-slider .owl-nav div.owl-next {
+  width: 44px;
+  height: 44px;
+  background: #fff;
+  border-radius: 50%;
+  border: none;
+  color: #0e0e46;
+}
+.testimonial-slider .owl-nav div.owl-prev.owl-prev,
+.testimonial-slider .owl-nav div.owl-next.owl-prev {
+  margin-right: 10px;
+}
+.testimonial-slider .owl-nav div.owl-prev:hover,
+.testimonial-slider .owl-nav div.owl-next:hover {
+  background: #6c60fe;
+  color: #fff;
+}
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #6c60fe;
+}
+.owl-theme .owl-dots .owl-dot.active {
+  background: #fff;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #6c60fe;
+  position: relative;
+}
+.owl-dots .owl-dot {
+  margin-right: 10px;
+  border-radius: 50%;
+  // border: 2px solid #FFF;
+  -webkit-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.owl-dots .owl-dot span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #e3e3e3;
+  display: inline-block;
+}
+.owl-carousel.owl-theme .owl-dots .owl-dot span {
+  margin: 0;
+}
+.owl-carousel.owl-theme .owl-nav [class*="owl-"] {
+  padding: 10px 7px;
+}
+.sidebar-img-slider .owl-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px 20px 0 0;
+}
+.sidebar-img-slider .owl-nav .owl-prev,
+.feature-property-sec .feature-slider .owl-nav .owl-prev,
+.property-type-slider .owl-nav .owl-prev {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #fff;
+  color: #0e0e46;
+}
+.sidebar-img-slider .owl-nav .owl-prev:hover {
+  background: #fff;
+  color: #0e0e46;
+}
+.sidebar-img-slider .owl-nav .owl-next,
+.feature-property-sec .feature-slider .owl-nav .owl-next,
+.property-type-slider .owl-nav .owl-next {
+  background: #fff;
+  color: #0e0e46;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.sidebar-img-slider .owl-nav .owl-next:hover {
+  background: #fff;
+  color: #0e0e46;
+}
+.feature-property-sec .feature-slider .owl-nav .owl-next:hover,
+.property-type-slider .owl-nav .owl-next:hover {
+  background: #6c60fe;
+  color: #fff;
+}
+.feature-property-sec .feature-slider .owl-nav .owl-prev:hover,
+.property-type-slider .owl-nav .owl-prev:hover {
+  background: #6c60fe;
+  color: #fff;
+}
+mat-slider.mat-mdc-slider {
+  width: 100%;
+}
+.feature-property-sec .feature-slider .owl-nav {
+  text-align: center;
+  position: absolute;
+  top: -110px;
+  right: 0;
+}
+.property-type-slider .owl-nav {
+  left: -50%;
+  position: absolute;
+  bottom: 0;
+}
+.banner-property-info mat-select.custom-mat-select .mat-mdc-select-trigger {
+  height: 60px;
+}
+.hidden {
+  display: none;
+}
+
+.lg-outer.lg-visible {
+  z-index: 10000;
+  background-color: #000000;
+}
+.mat-mdc-select-value-text span.mat-mdc-select-min-line {
+  font-size: 14px;
+}
+.left-sidebar-widget .mat-mdc-select-trigger .mat-mdc-select-placeholder,
+.showing-result-head .mat-mdc-select-trigger .mat-mdc-select-placeholder,
+.showing-result-head .mat-mdc-select-value-text span.mat-mdc-select-min-line ,
+.review-form.form-wrap .mat-mdc-select-value-text span.mat-mdc-select-min-line,
+.review-form.form-wrap .mat-mdc-select-trigger .mat-mdc-select-placeholder
+{
+  color: #8A909A;
+  font-size: 14px;
+}
+mat-slider.mat-mdc-slider .mdc-slider__thumb-knob {
+  background-color: #6C60FE;
+  border-color: #6C60FE;
+}
+mat-slider.mat-mdc-slider .mdc-slider__track--active_fill {
+  border-color: #6C60FE;
+}
+.banner-property-grid .mat-mdc-select-trigger .mat-mdc-select-placeholder,
+.banner-property-grid .mat-mdc-select-trigger .mat-mdc-select-value,
+.banner-property-grid .mat-mdc-select-value-text span.mat-mdc-select-min-line 
+{
+  color: #0E0E46;
+  font-size: 16px;
+  line-height: 60px;
+}
+.header .main-menu-wrapper .main-nav > li .submenu li.active > a {
+  color: #6C60FE;
+}
+.owl-carousel.owl-theme .owl-dots .owl-dot,
+owl-carousel-o .owl-carousel.owl-theme .owl-dots
+ {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

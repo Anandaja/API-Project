@@ -1,0 +1,58 @@
+[
+    {
+        "ProductImage" : "product-6.jpg",
+        "AvatarImage" : "avatar-01.jpg",
+        "Amount" : "$2,200",
+        "New" : "New",
+        "Class" : "new-featured",
+        "Topic" : "Beautiful Condo Room",
+        "Location" : "318-S Oakley Blvd, Chicago, IL 60612, USA",
+        "Beds" : "3 Beds",
+        "Baths" : "2 Baths",
+        "Sqft" : "15000 Sqft",
+        "Name" : "Marc Silva",
+        "LocationOne" : "Newyork"
+    },
+    {
+        "ProductImage" : "product-7.jpg",
+        "AvatarImage" : "avatar-02.jpg",
+        "Amount" : "$1,400",
+        "New" : "",
+        "Class" : "",
+        "Topic" : "Grand Mahaka",
+        "Location" : "470 Park Ave S, New York, NY 10016",
+        "Beds" : "3 Beds",
+        "Baths" : "3 Baths",
+        "Sqft" : "30100 Sqft",
+        "Name" : "Karen Maria",
+        "LocationOne" : "South Dokata"
+    },
+    {
+        "ProductImage" : "product-8.jpg",
+        "AvatarImage" : "avatar-03.jpg",
+        "Amount" : "$1,500",
+        "New" : "",
+        "Class" : "",
+        "Topic" : "Royal Apartment",
+        "Location" : "82-25 Parsons Blvd, Jamaica, NY 11432, USA",
+        "Beds" : "2 Beds",
+        "Baths" : "1 Baths",
+        "Sqft" : "2500 Sqft",
+        "Name" : "Scott Gwin",
+        "LocationOne" : "Minipoliies"
+    },
+    {
+        "ProductImage" : "product-10.jpg",
+        "AvatarImage" : "avatar-05.jpg",
+        "Amount" : "$4,500",
+        "New" : "",
+        "Class" : "",
+        "Topic" : "Grand Villa house",
+        "Location" : " 470 Park Ave S, New York, NY 10016",
+        "Beds" : "4 Beds",
+        "Baths" : "3 Baths",
+        "Sqft" : "11000 Sqft",
+        "Name" : "Kell Robinson",
+        "LocationOne" : "USA"
+    }
+]

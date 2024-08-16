@@ -1,0 +1,487 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb">
+    <div class="container">
+        <div class="bread-crumb-head">
+            <div class="breadcrumb-title">
+                <h2>Rent Property Grid without Sidebar</h2>
+            </div>
+            <div class="breadcrumb-list">
+                <ul>
+                    <li><a [routerLink] = "routes.home">Home </a></li>
+                    <li>Rent Property Grid without Sidebar</li>
+                </ul>
+            </div>
+        </div>
+        <div class="breadcrumb-border-img">
+            <img src="assets/img/bg/line-bg.png" alt="Line Image">
+        </div>
+    </div>
+</div>
+<!-- Breadcrumb -->
+
+<!-- Feature Property For Rent -->
+<div class="listing-section">
+    <div class="container">
+
+        <!-- Sort Result -->
+        <div class="showing-result-head">
+            <div class="row align-items-center">
+                <div class="col-lg-3">
+                    <div class="result-show">
+                        <h5>Showing result <span>06</span> of <span>125</span></h5>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="sort-result">
+                        <div class="sort-by grid-head">
+                            <div>
+                                <p>Sort By</p>
+                            </div>
+                            <div class="review-form">
+                                <mat-select class="custom-mat-select" placeholder="Default">
+                                    <mat-option value="0">Default</mat-option>
+                                    <mat-option value="1">A-Z</mat-option>
+                                </mat-select>
+                            </div>
+                        </div>
+                        <div class="price-range grid-head">
+                            <div>
+                                <p>Price Range</p>
+                            </div>
+                            <div class="review-form">
+                                <mat-select class="custom-mat-select" placeholder="Low to High">
+                                    <mat-option value="low">Low to High</mat-option>
+                                    <mat-option value="high">High to Low</mat-option>
+                                </mat-select>
+                            </div>
+                        </div>
+                        <div class="grid-list-view">
+                            <ul>
+                                <li><a [routerLink] = "routes.rentPropertyGrid" class="active"><i class="bx bx-grid"></i></a></li>
+                                <li><a [routerLink] = "routes.rentPropertyList"><i class="bx bx-list-ul"></i></a></li>
+                                <li><a [routerLink] = "routes.rentGridMap"><i class="bx bxs-map"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Sort Result -->
+
+        <div class="feature-property-sec for-rent for-rent p-0 bg-transparent">
+            <div class="row">
+
+                <!-- Rent grid -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="product-custom">
+                        <div class="profile-widget">
+                            <div class="doc-img">
+                                <a [routerLink] = "routes.rentDetails" class="property-img">
+                                    <img class="img-fluid" alt="Property Image" src="assets/img/product/product-6.jpg">
+                                </a>
+                                <div class="product-amount">
+                                    <h5><span>$2,200 </span> / Night</h5>
+                                </div>
+                                <div class="featured">
+                                    <span>Featured</span>
+                                </div>
+                                <div class="new-featured">
+                                    <span>New</span> 
+                                </div>
+                                <a href="javascript:void(0)" (click)="toggleSelect(1)">
+                                    <div class="favourite"
+                                        [ngClass]="{ selected: isSelectAdded[1] }">
+                                        <span><i class="fa-regular fa-heart"></i></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="pro-content">
+                                <div class="rating">
+                                    <span class="rating-count">
+                                        <i class="fa-solid fa-star checked"></i>
+                                        <i class="fa-solid fa-star checked"></i>
+                                        <i class="fa-solid fa-star checked"></i>
+                                        <i class="fa-solid fa-star checked"></i>
+                                        <i class="fa-solid fa-star checked"></i>
+                                    </span>
+                                    <span class="rating-review">Excellent</span>
+                                </div>
+                                <h3 class="title">
+                                    <a [routerLink] = "routes.rentDetails">Beautiful Condo Room</a> 
+                                </h3>
+                                <p><i class="feather icon-map-pin"></i> 318-S Oakley Blvd, Chicago, IL 60612, USA</p>
+                                <ul class="d-flex details">
+                                    <li>
+                                        <img src="assets/img/icons/bed-icon.svg" alt="bed-icon" >
+                                        4 Beds
+                                    </li>
+                                    <li>
+                                        <img src="assets/img/icons/bath-icon.svg" alt="bath-icon">
+                                        4 Baths
+                                    </li>
+                                    <li>
+                                        <img src="assets/img/icons/building-icon.svg" alt="building-icon">
+                                        35000 Sqft
+                                    </li>
+                                </ul>
+                                <ul class="property-category d-flex justify-content-between align-items-center">
+                                    <li class="user-info">
+                                       <a [routerLink] = "routes.agentGrid"><img src="assets/img/profiles/avatar-01.jpg" class="img-fluid avatar" alt="User"></a>
+                                        <div class="user-name">
+                                            <a [routerLink] = "routes.agentGrid">Marc Silva</a>
+                                            <p>Newyork</p>
+                                        </div>													
+                                    </li>
+                                    <li>
+                                        <a [routerLink] = "routes.rentDetails" class="btn-primary">Book Now</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>		
+                    </div>
+                </div>
+                <!-- /Rent grid -->
+
+                <!-- Rent grid -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="product-custom">
+                        <div class="profile-widget">
+                            <div class="doc-img">
+                                <a [routerLink] = "routes.rentDetails" class="property-img">
+                                    <img class="img-fluid" alt="Property Image" src="assets/img/product/product-7.jpg">
+                                </a>
+                                <div class="product-amount">
+                                    <h5><span>$1,400 </span> / Night</h5>
+                                </div>
+                                <div class="featured">
+                                    <span>Featured</span>
+                                </div>
+                                <a href="javascript:void(0)" (click)="toggleFavourite(1)">
+                                    <div class="favourite" [ngClass]="{'selected': isFavourite[1]}">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="pro-content">
+                                <div class="rating">
+                                    <span class="rating-count">
+                                        <i class="fa-solid fa-star checked"></i>
+                                        <i class="fa-solid fa-star checked"></i>
+                                        <i class="fa-solid fa-star checked"></i>
+                                        <i class="fa-solid fa-star checked"></i>
+                                        <i class="fa-solid fa-star checked"></i>
+                                    </span>
+                                    <span class="rating-review">Excellent</span>
+                                </div>
+                                <h3 class="title">
+                                    <a [routerLink] = "routes.rentDetails">Grand Mahaka</a> 
+                                </h3>
+                                <p><i class="feather icon-map-pin"></i> 470 Park Ave S, New York, NY 10016</p>
+                                <ul class="d-flex details">
+                                    <li>
+                                        <img src="assets/img/icons/bed-icon.svg" alt="bed-icon" >
+                                        2 Beds
+                                    </li>
+                                    <li>
+                                        <img src="assets/img/icons/bath-icon.svg" alt="bath-icon">
+                                        1 Baths
+                                    </li>
+                                    <li>
+                                        <img src="assets/img/icons/building-icon.svg" alt="building-icon">
+                                        5000 Sqft
+                                    </li>
+                                </ul>
+                                <ul class="property-category d-flex justify-content-between align-items-center">
+                                    <li class="user-info">
+                                        <a [routerLink] = "routes.agentGrid"><img src="assets/img/profiles/avatar-02.jpg" class="img-fluid avatar" alt="User"></a>
+                                        <div class="user-name">
+                                            <a [routerLink] = "routes.agentGrid">Karen Maria</a>
+                                            <p>South Dokata</p>
+                                        </div>													
+                                    </li>
+                                    <li>
+                                        <a [routerLink] = "routes.rentDetails" class="btn-primary">Book Now</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>		
+                    </div>
+                </div>
+                <!-- /Rent grid -->
+
+                <!-- Rent grid -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="product-custom">
+                        <div class="profile-widget">
+                            <div class="doc-img">
+                                <a [routerLink] = "routes.rentDetails" class="property-img">
+                                    <img class="img-fluid" alt="Property Image" src="assets/img/product/product-8.jpg">
+                                </a>
+                                <div class="product-amount">
+                                    <h5><span>$1,500 </span> / Night</h5>
+                                </div>
+                                <div class="featured">
+                                    <span>Featured</span>
+                                </div>
+                                <a href="javascript:void(0)" (click)="toggleSelect(3)">
+                                    <div class="favourite"
+                                        [ngClass]="{ selected: isSelectAdded[3] }">
+                                        <span><i class="fa-regular fa-heart"></i></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="pro-content">
+                                <div class="rating">
+                                    <span class="rating-count">
+                                        <i class="fa-solid fa-star checked"></i>
+                                        <i class="fa-solid fa-star checked"></i>
+                                        <i class="fa-solid fa-star checked"></i>
+                                        <i class="fa-solid fa-star checked"></i>
+                                        <i class="fa-solid fa-star checked"></i>
+                                    </span>
+                                    <span class="rating-review">Excellent</span>
+                                </div>
+                                <h3 class="title">
+                                    <a [routerLink] = "routes.rentDetails">Royal Apartment</a> 
+                                </h3>
+                                <p><i class="feather icon-map-pin"></i> 82-25 Parsons Blvd, Jamaica, NY 11432, USA</p>
+                                <ul class="d-flex details">
+                                    <li>
+                                        <img src="assets/img/icons/bed-icon.svg" alt="bed-icon" >
+                                        3 Beds
+                                    </li>
+                                    <li>
+                                        <img src="assets/img/icons/bath-icon.svg" alt="bath-icon">
+                                        3 Baths
+                                    </li>
+                                    <li>
+                                        <img src="assets/img/icons/building-icon.svg" alt="building-icon">
+                                        12000 Sqft
+                                    </li>
+                                </ul>
+                                <ul class="property-category d-flex justify-content-between align-items-center">
+                                    <li class="user-info">
+                                        <a [routerLink] = "routes.agentGrid"><img src="assets/img/profiles/avatar-03.jpg" class="img-fluid avatar" alt="User"></a>
+                                        <div class="user-name">
+                                            <a [routerLink] = "routes.agentGrid">Scott Gwin</a>
+                                            <p>Minipoliies</p>
+                                        </div>													
+                                    </li>
+                                    <li>
+                                        <a [routerLink] = "routes.rentDetails" class="btn-primary">Book Now</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>		
+                    </div>
+                </div>
+                <!-- /Rent grid -->
+
+                <!-- Rent grid -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="product-custom">
+                        <div class="profile-widget">
+                            <div class="doc-img">
+                                <a [routerLink] = "routes.rentDetails" class="property-img">
+                                    <img class="img-fluid" alt="Property Image" src="assets/img/product/product-9.jpg">
+                                </a>
+                                <div class="product-amount">
+                                    <h5><span>$3,500 </span> / Night</h5>
+                                </div>
+                                <div class="featured">
+                                    <span>Featured</span>
+                                </div>
+                                <a href="javascript:void(0)" (click)="toggleSelect(4)">
+                                    <div class="favourite"
+                                        [ngClass]="{ selected: isSelectAdded[4] }">
+                                        <span><i class="fa-regular fa-heart"></i></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="pro-content">
+                                <div class="rating">
+                                    <span class="rating-count">
+                                        <i class="fa-solid fa-star checked"></i>
+                                        <i class="fa-solid fa-star checked"></i>
+                                        <i class="fa-solid fa-star checked"></i>
+                                        <i class="fa-solid fa-star checked"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                    <span class="rating-review">Excellent</span>
+                                </div>
+                                <h3 class="title">
+                                    <a [routerLink] = "routes.rentDetails" tabindex="-1">Lunaria Residence</a> 
+                                </h3>
+                                <p><i class="feather icon-map-pin"></i> 518-520 8th Ave, New York, NY 10018, USA</p>
+                                <ul class="d-flex details">
+                                    <li>
+                                        <img src="assets/img/icons/bed-icon.svg" alt="bed-icon" >
+                                        4 Beds
+                                    </li>
+                                    <li>
+                                        <img src="assets/img/icons/bath-icon.svg" alt="bath-icon">
+                                        2 Baths
+                                    </li>
+                                    <li>
+                                        <img src="assets/img/icons/building-icon.svg" alt="building-icon">
+                                        31000 Sqft
+                                    </li>
+                                </ul>
+                                <ul class="property-category d-flex justify-content-between align-items-center">
+                                    <li class="user-info">
+                                        <a [routerLink] = "routes.agentGrid"><img src="assets/img/profiles/avatar-04.jpg" class="img-fluid avatar" alt="User"></a>
+                                        <div class="user-name">
+                                            <a [routerLink] = "routes.agentGrid">Burdette</a>
+                                            <p>Cambridge</p>
+                                        </div>													
+                                    </li>
+                                    <li>
+                                        <a [routerLink] = "routes.rentDetails" class="btn-primary">Book Now</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>		
+                    </div>
+                </div>
+                <!-- /Rent grid -->
+
+                <!-- Rent grid -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="product-custom">
+                        <div class="profile-widget">
+                            <div class="doc-img">
+                                <a [routerLink] = "routes.rentDetails" class="property-img">
+                                    <img class="img-fluid" alt="Property Image" src="assets/img/product/product-10.jpg">
+                                </a>
+                                <div class="product-amount">
+                                    <h5><span>$4,500 </span> / Night</h5>
+                                </div>
+                                <div class="featured">
+                                    <span>Featured</span>
+                                </div>
+                                <a href="javascript:void(0)" (click)="toggleFavourite(2)">
+                                    <div class="favourite" [ngClass]="{'selected': isFavourite[2]}">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="pro-content">
+                                <div class="rating">
+                                    <span class="rating-count">
+                                        <i class="fa-solid fa-star checked"></i>
+                                        <i class="fa-solid fa-star checked"></i>
+                                        <i class="fa-solid fa-star checked"></i>
+                                        <i class="fa-solid fa-star checked"></i>
+                                        <i class="fa-solid fa-star checked"></i>
+                                    </span>
+                                    <span class="rating-review">Excellent</span>
+                                </div>
+                                <h3 class="title">
+                                    <a [routerLink] = "routes.rentDetails">Grand Villa house</a> 
+                                </h3>
+                                <p><i class="feather icon-map-pin"></i> 470 Park Ave S, New York, NY 10016</p>
+                                <ul class="d-flex details">
+                                    <li>
+                                        <img src="assets/img/icons/bed-icon.svg" alt="bed-icon" >
+                                        4 Beds
+                                    </li>
+                                    <li>
+                                        <img src="assets/img/icons/bath-icon.svg" alt="bath-icon">
+                                        2 Baths
+                                    </li>
+                                    <li>
+                                        <img src="assets/img/icons/building-icon.svg" alt="building-icon">
+                                        11000 Sqft
+                                    </li>
+                                </ul>
+                                <ul class="property-category d-flex justify-content-between align-items-center">
+                                    <li class="user-info">
+                                        <a [routerLink] = "routes.agentGrid"><img src="assets/img/profiles/avatar-05.jpg" class="img-fluid avatar" alt="User"></a>
+                                        <div class="user-name">
+                                            <a [routerLink] = "routes.agentGrid">Kell Robinson</a>
+                                            <p>USA</p>
+                                        </div>													
+                                    </li>
+                                    <li>
+                                        <a [routerLink] = "routes.rentDetails" class="btn-primary">Book Now</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>		
+                    </div>
+                </div>
+                <!-- /Rent grid -->
+
+                <!-- Rent grid -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="product-custom">
+                        <div class="profile-widget">
+                            <div class="doc-img">
+                                <a [routerLink] = "routes.rentDetails" class="property-img">
+                                    <img class="img-fluid" alt="Property Image" src="assets/img/product/product-11.jpg">
+                                </a>
+                                <div class="product-amount">
+                                    <h5><span>$2,400 </span> / Night</h5>
+                                </div>
+                                <div class="featured">
+                                    <span>Featured</span>
+                                </div>
+                                <a href="javascript:void(0)" (click)="toggleSelect(6)">
+                                    <div class="favourite"
+                                        [ngClass]="{ selected: isSelectAdded[6] }">
+                                        <span><i class="fa-regular fa-heart"></i></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="pro-content">
+                                <div class="rating">
+                                    <span class="rating-count">
+                                        <i class="fa-solid fa-star checked"></i>
+                                        <i class="fa-solid fa-star checked"></i>
+                                        <i class="fa-solid fa-star checked"></i>
+                                        <i class="fa-solid fa-star checked"></i>
+                                        <i class="fa-solid fa-star checked"></i>
+                                    </span>
+                                    <span class="rating-review">Excellent</span>
+                                </div>
+                                <h3 class="title">
+                                    <a [routerLink] = "routes.rentDetails">Stephen Alexander Homes</a> 
+                                </h3>
+                                <p><i class="feather icon-map-pin"></i> 122 N Morgan St, Chicago, IL 60607, USA</p>
+                                <ul class="d-flex details">
+                                    <li>
+                                        <img src="assets/img/icons/bed-icon.svg" alt="bed-icon" >
+                                        1 Beds
+                                    </li>
+                                    <li>
+                                        <img src="assets/img/icons/bath-icon.svg" alt="bath-icon">
+                                        1 Baths
+                                    </li>
+                                    <li>
+                                        <img src="assets/img/icons/building-icon.svg" alt="building-icon">
+                                        7000 Sqft
+                                    </li>
+                                </ul>
+                                <ul class="property-category d-flex justify-content-between align-items-center">
+                                    <li class="user-info">
+                                        <a [routerLink] = "routes.agentGrid"><img src="assets/img/profiles/avatar-07.jpg" class="img-fluid avatar" alt="User"></a>
+                                        <div class="user-name">
+                                            <a [routerLink] = "routes.agentGrid">Pittman</a>
+                                            <p>Cambridge</p>
+                                        </div>													
+                                    </li>
+                                    <li>
+                                        <a [routerLink] = "routes.rentDetails" class="btn-primary">Book Now</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>		
+                    </div>
+                </div>
+                <!-- /Rent grid -->
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Feature Property For Rent -->

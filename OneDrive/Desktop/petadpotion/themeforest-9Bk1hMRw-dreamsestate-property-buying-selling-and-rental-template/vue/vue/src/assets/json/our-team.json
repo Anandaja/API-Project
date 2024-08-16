@@ -1,0 +1,32 @@
+[
+    {
+        "Image" : "team-01.jpg",
+        "Name" : "Joseph Evans",
+        "Role" : "CEO"
+    },
+    {
+        "Image" : "team-02.jpg",
+        "Name" : "Thomas Stine",
+        "Role" : "COO"
+    },
+    {
+        "Image" : "team-03.jpg",
+        "Name" : "Dawn Richardson",
+        "Role" : "Marketing Head"
+    },
+    {
+        "Image" : "team-04.jpg",
+        "Name" : "Belva Gonzalez",
+        "Role" : "Designer"
+    },
+    {
+        "Image" : "team-05.jpg",
+        "Name" : "Willie Cropper",
+        "Role" : "Developer"
+    },
+    {
+        "Image" : "team-06.jpg",
+        "Name" : "Maria Steinke",
+        "Role" : "Lead Developer"
+    }
+]

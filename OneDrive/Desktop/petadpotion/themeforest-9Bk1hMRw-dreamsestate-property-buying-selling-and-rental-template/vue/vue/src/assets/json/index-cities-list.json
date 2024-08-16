@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "Image": "city-1.jpg",
+        "City": "New York",
+        "Property": "300 Properties",
+        "Image1": "city-2.jpg",
+        "City1": "Singapore",
+        "Property1": "400 Properties"
+    },
+    {
+        "id": 2,
+        "Image": "city-3.jpg",
+        "City": "Thailand",
+        "Property": "200 Properties",
+        "Image1": "city-4.jpg",
+        "City1": "Argentina",
+        "Property1": "740 Properties"
+    },
+    {
+        "id": 3,
+        "Image": "city-5.jpg",
+        "City": "United Kingdom",
+        "Property": "1450 Properties",
+        "Image1": "city-1.jpg",
+        "City1": "United Arab Emirates",
+        "Property1": "100 Properties"
+    },
+    {
+        "id": 4,
+        "Image": "city-1.jpg",
+        "City": "USA",
+        "Property": "320 Properties",
+        "Image1": "city-2.jpg",
+        "City1": "Singapore",
+        "Property1": "500 Properties"
+    }
+]

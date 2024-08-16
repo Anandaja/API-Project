@@ -1,0 +1,504 @@
+ <!-- Breadcrumb -->
+ <div class="breadcrumb">
+    <div class="container">
+        <div class="bread-crumb-head">
+            <div class="breadcrumb-title">
+                <h2>Buy Property Grid with Map</h2>
+            </div>
+            <div class="breadcrumb-list">
+                <ul>
+                    <li><a [routerLink]="routes.home">Home </a></li>
+                    <li>Buy Property Grid with Map</li>
+                </ul>
+            </div>
+        </div>
+        <div class="breadcrumb-border-img">
+            <img src="assets/img/bg/line-bg.png" class="img-fluid" alt="Image">
+        </div>
+    </div>
+</div>
+<!-- Breadcrumb -->
+
+<!-- Content -->
+<div class="content p-0">
+    <div class="container-fluid">
+        <div class="row">
+
+            <!-- Map -->
+            <div class="col-xl-5 col-sm-12 map-right grid-map map-top">
+                <div id="map" class="map-listing"></div>
+            </div>
+            <!-- /Map -->
+
+            <div class="col-xl-7 col-sm-12 map-content">
+
+                <!-- Sidebar -->
+                <div class="advanced-search">
+                    <h3>Advanced Search</h3>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="review-form form-wrap ">
+                                <input type="text" class="form-control" placeholder="Location">
+                                <span class="form-icon">
+                                    <i class="bx bx-map"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-12">
+                            <div class="review-form form-wrap ">
+                                <mat-select class="custom-mat-select" placeholder="Categories">
+                                    <mat-option value="categories">Categories</mat-option>
+                                    <mat-option value="apertment">Apartments</mat-option>
+                                    <mat-option value="apertment">Condos</mat-option>
+                                    <mat-option value="apertment">Houses</mat-option>
+                                </mat-select>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-12">
+                            <div class="review-form form-wrap ">
+                                <mat-select class="custom-mat-select" placeholder="Bedrooms">
+                                    <mat-option value="4">No of Bedrooms</mat-option>
+                                    <mat-option value="4">4</mat-option>
+                                    <mat-option value="2">2</mat-option>
+                                </mat-select>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-12">
+                            <div class="review-form form-wrap ">
+                                <mat-select class="custom-mat-select" placeholder="Bathrooms">
+                                    <mat-option value="4">No of  Bathrooms</mat-option>
+                                    <mat-option value="3">3</mat-option>
+                                    <mat-option value="2">2</mat-option>
+                                </mat-select>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-12">
+                            <div class="review-form form-wrap ">
+                                <input type="text" class="form-control" placeholder="Min Sqft">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-12">
+                            <div class="review-form form-wrap ">
+                                <input type="text" class="form-control" placeholder="Min Price">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-12">
+                            <div class="review-form form-wrap ">
+                                <input type="text" class="form-control" placeholder="Max Price">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-12">
+                            <div class="review-form form-wrap ">
+                              
+                                <mat-select class="custom-mat-select" placeholder="Reviews">
+                                    <mat-option value="4">Reviews</mat-option>
+                                    <mat-option value="4">1 Review</mat-option>
+                                    <mat-option value="3">2 Review</mat-option>
+                                </mat-select>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-12">
+                            <div class="review-form form-wrap ">
+                                <input type="text" class="form-control" placeholder="Amenities">
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="review-form-btn">
+                                <a href="javascript:void(0);" class="btn btn-primary">Apply Filter</a>
+                                <a href="javascript:void(0);" class="reset-btn">Reset Selection</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Sidebar -->
+
+                <!-- Result -->
+                <div class="result-map">
+                    <div class="showing-result-head">
+                        <div class="row align-items-center">
+                            <div class="col-md-3">
+                                <div class="result-show">
+                                    <h5>Showing result <span>06</span> of <span>125</span></h5>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="row">
+                                    <div class="col-md-12 d-flex justify-content-md-end flex-wrap">
+                                        <div class="sort-by grid-head">
+                                            <div>
+                                                <span>Sort By</span>
+                                            </div>
+                                            <div class="review-form">
+                                                <mat-select class="custom-mat-select" placeholder="Bedrooms">
+                                                    <mat-option value="4">Default</mat-option>
+                                                    <mat-option value="5">10 AM - 12 PM</mat-option>
+                                                    <mat-option value="6">12 PM - 2 PM</mat-option>
+                                                    <mat-option value="7">02 PM - 04 PM</mat-option>
+                                                </mat-select>
+                                    
+
+                                            </div>
+                                        </div>
+                                        <div class="grid-list-view">
+                                            <ul class="justify-content-end">
+                                                <li><a [routerLink]="routes.buyPropertyGrid" ><i class="feather icon-grid"></i></a></li>
+                                                <li><a [routerLink]="routes.buyPropertyListSidebar"><i class="feather icon-list"></i></a></li>
+                                                <li><a [routerLink]="routes.buyGridMap" class="active"><i class="feather icon-map-pin"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Result -->
+
+                <div class="feature-property-sec rent-grid p-0 bg-white">
+                    <div class="row ">
+
+                        <!-- Buy grid -->
+                        <div class="col-lg-6 d-flex">
+                            <div class="product-custom flex-fill">
+                                <div class="profile-widget">
+                                    <div class="doc-img">
+                                        <a [routerLink]="routes.buyDetails" class="property-img">
+                                            <img class="img-fluid" alt="Property Image"
+                                                src="assets/img/product/product-1.jpg">
+                                        </a>
+                                        <div class="product-amount">
+                                            <span>$41,000</span>
+                                        </div>
+                                        <div class="feature-rating">
+                                            <div>
+                                                <div class="featured">
+                                                    <span>Featured</span>
+                                                </div>
+                                                <div class="new-featured">
+                                                    <span>New</span>
+                                                </div>
+                                            </div>
+                                            <a href="javascript:void(0)" (click)="toggleClass(0)">
+                                                <div class="favourite"  [ngClass]="{'selected': isClassAdded[0]}">
+                                                    <span><i class="fa-regular fa-heart"></i></span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="user-avatar">
+                                            <img src="assets/img/profiles/avatar-01.jpg" alt="User">
+                                        </div>
+                                    </div>
+                                    <div class="pro-content">
+                                        <div class="rating">
+                                            <span class="rating-count">
+                                                <i class="fa-solid fa-star checked"></i>
+                                                <i class="fa-solid fa-star checked"></i>
+                                                <i class="fa-solid fa-star checked"></i>
+                                                <i class="fa-solid fa-star checked"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <p class="rating-review"><span>4.0</span>(5 Reviews)</p>
+                                        </div>
+                                        <h3 class="title">
+                                            <a [routerLink]="routes.buyDetails" tabindex="-1">Place perfect for
+                                                nature</a>
+                                        </h3>
+                                        <p><i class="feather icon-map-pin"></i> 318-S Oakley Blvd, Chicago, IL 60612,
+                                            USA</p>
+                                        <ul class="d-flex details">
+                                            <li>
+                                                <img src="assets/img/icons/bed-icon.svg" alt="bed-icon">
+                                                4 Beds
+                                            </li>
+                                            <li>
+                                                <img src="assets/img/icons/bath-icon.svg" alt="bath-icon">
+                                                4 Baths
+                                            </li>
+                                            <li>
+                                                <img src="assets/img/icons/building-icon.svg"
+                                                    alt="building-icon">
+                                                35000 Sqft
+                                            </li>
+                                        </ul>
+
+                                        <ul class="property-category d-flex justify-content-between">
+                                            <li>
+                                                <span class="list">Listed on : </span>
+                                                <span class="date">16 Jan 2023</span>
+                                            </li>
+                                            <li>
+                                                <span class="category list">Category : </span>
+                                                <span class="category-value date">Apartment</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Buy grid -->
+
+                        <!-- Buy grid -->
+                        <div class="col-lg-6 d-flex">
+                            <div class="product-custom flex-fill">
+                                <div class="profile-widget">
+                                    <div class="doc-img">
+                                        <a [routerLink]="routes.buyDetails" class="property-img">
+                                            <img class="img-fluid" alt="Property Image"
+                                                src="assets/img/product/product-2.jpg">
+                                        </a>
+                                        <div class="product-amount">
+                                            <span>$78,000</span>
+                                        </div>
+                                        <div class="feature-rating">
+                                            <div>
+                                                <div class="featured">
+                                                    <span>Featured</span>
+                                                </div>
+                                            </div>
+                                            <a href="javascript:void(0)" (click)="toggleClass(1)">
+                                                <div class="favourite"  [ngClass]="{'selected': isClassAdded[1]}">
+                                                    <span><i class="fa-regular fa-heart"></i></span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="user-avatar">
+                                            <img src="assets/img/profiles/avatar-02.jpg" alt="User">
+                                        </div>
+                                    </div>
+                                    <div class="pro-content">
+                                        <div class="rating">
+                                            <span class="rating-count">
+                                                <i class="fa-solid fa-star checked"></i>
+                                                <i class="fa-solid fa-star checked"></i>
+                                                <i class="fa-solid fa-star checked"></i>
+                                                <i class="fa-solid fa-star checked"></i>
+                                                <i class="fa-solid fa-star checked"></i>
+                                            </span>
+                                            <p class="rating-review"><span>5.0</span>(12 Reviews)</p>
+                                        </div>
+                                        <h3 class="title">
+                                            <a [routerLink]="routes.buyDetails" tabindex="-1">Beautiful Condo Room</a>
+                                        </h3>
+                                        <p><i class="feather icon-map-pin"></i> 470 Park Ave S, New York, NY 10016
+                                        </p>
+                                        <ul class="d-flex details">
+                                            <li>
+                                                <img src="assets/img/icons/bed-icon.svg" alt="bed-icon">
+                                                3 Beds
+                                            </li>
+                                            <li>
+                                                <img src="assets/img/icons/bath-icon.svg" alt="bath-icon">
+                                                1 Bath
+                                            </li>
+                                            <li>
+                                                <img src="assets/img/icons/building-icon.svg"
+                                                    alt="building-icon">
+                                                12000 Sqft
+                                            </li>
+                                        </ul>
+
+                                        <ul class="property-category d-flex justify-content-between">
+                                            <li>
+                                                <span class="list">Listed on : </span>
+                                                <span class="date">17 Jan 2023</span>
+                                            </li>
+                                            <li>
+                                                <span class="category list">Category : </span>
+                                                <span class="category-value date">Condos</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Buy grid -->
+
+                        <!-- Buy grid -->
+                        <div class="col-lg-6 d-flex">
+                            <div class="product-custom flex-fill">
+                                <div class="profile-widget">
+                                    <div class="doc-img">
+                                        <a [routerLink]="routes.buyDetails" class="property-img">
+                                            <img class="img-fluid" alt="Property Image"
+                                                src="assets/img/product/product-3.jpg">
+                                        </a>
+                                        <div class="product-amount">
+                                            <span>$63,000</span>
+                                        </div>
+                                        <div class="feature-rating">
+                                            <div>
+                                                <div class="featured">
+                                                    <span>Featured</span>
+                                                </div>
+                                            </div>
+                                            <a href="javascript:void(0)" (click)="toggleClass(2)">
+                                                <div class="favourite"  [ngClass]="{'selected': isClassAdded[2]}">
+                                                    <span><i class="fa-regular fa-heart"></i></span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="user-avatar">
+                                            <img src="assets/img/profiles/avatar-03.jpg" alt="User">
+                                        </div>
+                                    </div>
+                                    <div class="pro-content">
+                                        <div class="rating">
+                                            <span class="rating-count">
+                                                <i class="fa-solid fa-star checked"></i>
+                                                <i class="fa-solid fa-star checked"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <p class="rating-review"><span>3.0</span>(8 Reviews)</p>
+                                        </div>
+                                        <h3 class="title">
+                                            <a [routerLink]="routes.buyDetails" tabindex="-1">Summer house</a>
+                                        </h3>
+                                        <p><i class="feather icon-map-pin"></i> 82-25 Parsons Blvd, Jamaica, NY
+                                            11432, USA</p>
+                                        <ul class="d-flex details">
+                                            <li>
+                                                <img src="assets/img/icons/bed-icon.svg" alt="bed-icon">
+                                                2 Beds
+                                            </li>
+                                            <li>
+                                                <img src="assets/img/icons/bath-icon.svg" alt="bath-icon">
+                                                3 Baths
+                                            </li>
+                                            <li>
+                                                <img src="assets/img/icons/building-icon.svg"
+                                                    alt="building-icon">
+                                                2300 Sqft
+                                            </li>
+                                        </ul>
+
+                                        <ul class="property-category d-flex justify-content-between">
+                                            <li>
+                                                <span class="list">Listed on : </span>
+                                                <span class="date">13 Jan 2023</span>
+                                            </li>
+                                            <li>
+                                                <span class="category list">Category : </span>
+                                                <span class="category-value date">House</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Buy grid -->
+
+                        <!-- Buy grid -->
+                        <div class="col-lg-6 d-flex">
+                            <div class="product-custom flex-fill">
+                                <div class="profile-widget">
+                                    <div class="doc-img">
+                                        <a [routerLink]="routes.buyDetails" class="property-img">
+                                            <img class="img-fluid" alt="Property Image"
+                                                src="assets/img/product/product-4.jpg">
+                                        </a>
+                                        <div class="product-amount">
+                                            <span>$51,000</span>
+                                        </div>
+                                        <div class="feature-rating">
+                                            <div>
+                                                <div class="featured">
+                                                    <span>Featured</span>
+                                                </div>
+                                            </div>
+                                            <a href="javascript:void(0)" (click)="toggleClass(4)">
+                                                <div class="favourite"  [ngClass]="{'selected': isClassAdded[4]}">
+                                                    <span><i class="fa-regular fa-heart"></i></span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="user-avatar">
+                                            <img src="assets/img/profiles/avatar-04.jpg" alt="User">
+                                        </div>
+                                    </div>
+                                    <div class="pro-content">
+                                        <div class="rating">
+                                            <span class="rating-count">
+                                                <i class="fa-solid fa-star checked"></i>
+                                                <i class="fa-solid fa-star checked"></i>
+                                                <i class="fa-solid fa-star checked"></i>
+                                                <i class="fa-solid fa-star checked"></i>
+                                                <i class="fa-solid fa-star checked"></i>
+                                            </span>
+                                            <p class="rating-review"><span>5.0</span>(18 Reviews)</p>
+                                        </div>
+                                        <h3 class="title">
+                                            <a [routerLink]="routes.buyDetails" tabindex="-1">Minimalist and bright
+                                                flat</a>
+                                        </h3>
+                                        <p><i class="feather icon-map-pin"></i> 518-520 8th Ave, New York, NY 10018,
+                                            USA</p>
+                                        <ul class="d-flex details">
+                                            <li>
+                                                <img src="assets/img/icons/bed-icon.svg" alt="bed-icon">
+                                                3 Beds
+                                            </li>
+                                            <li>
+                                                <img src="assets/img/icons/bath-icon.svg" alt="bath-icon">
+                                                3 Baths
+                                            </li>
+                                            <li>
+                                                <img src="assets/img/icons/building-icon.svg"
+                                                    alt="building-icon">
+                                                12000 Sqft
+                                            </li>
+                                        </ul>
+
+                                        <ul class="property-category d-flex justify-content-between">
+                                            <li>
+                                                <span class="list">Listed on : </span>
+                                                <span class="date">18 Jan 2023</span>
+                                            </li>
+                                            <li>
+                                                <span class="category list">Category : </span>
+                                                <span class="category-value date">Flats</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Buy grid -->
+
+                        <!-- Pagination -->
+                        <div class="col-lg-12"> 
+                            <div class="col-lg-12"> 
+                                <div class="grid-pagination grid-pagination-map">
+                                    <ul class="pagination justify-content-center">
+                                        <li class="page-item prev">
+                                            <a class="page-link" href="javascript:void(0);"><i class="fa-solid fa-arrow-left"></i> Prev</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="javascript:void(0);">1</a>
+                                        </li>
+                                        <li class="page-item active">
+                                            <a class="page-link" href="javascript:void(0);">2</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="javascript:void(0);">3</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="javascript:void(0);">4</a>
+                                        </li>
+                                        <li class="page-item next">
+                                            <a class="page-link" href="javascript:void(0);">Next <i class="fa-solid fa-arrow-right"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Pagination -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Content -->

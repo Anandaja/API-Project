@@ -1,0 +1,766 @@
+   <!-- Breadcrumb -->
+   <div class="breadcrumb">
+    <div class="container">
+        <div class="bread-crumb-head">
+            <div class="breadcrumb-title">
+                <h2>Add New Property</h2>
+            </div>
+            <div class="breadcrumb-list">
+                <ul>
+                    <li><a [routerLink]="routes.home">Home </a></li>
+                    <li>Add New Property</li>
+                </ul>
+            </div>
+        </div>
+        <div class="breadcrumb-border-img">
+            <img src="assets/img/bg/line-bg.png" class="img-fluid" alt="Image">
+        </div>
+    </div>
+</div>
+<!-- Breadcrumb -->
+
+<!-- Content -->
+<div class="content inner-content">
+    <div class="container">
+        <div class="property-tabs">
+            <ul class="prop-tab">
+                <li>
+                    <a [class.active]="activeTab === 'propertyinfo'" (click)="setActiveTab('propertyinfo');scrollToSection(propertyinfo)" (keydown.enter)="setActiveTab('propertyinfo');scrollToSection(propertyinfo)" tabindex="0">Property Information</a>
+                </li>
+                <li>
+                    <a [class.active]="activeTab === 'property-details'" (click)="setActiveTab('property-details');scrollToSection(propertydetails)" (keydown.enter)="setActiveTab('propertydetails');scrollToSection(propertydetails)" tabindex="0" >Property Details</a>
+                </li>
+                <li>
+                    <a  [class.active]="activeTab === 'amenities'" (click)="setActiveTab('amenities');scrollToSection(amenities)" (keydown.enter)="setActiveTab('amenities');scrollToSection(amenities)" tabindex="0">Amenities</a>
+                </li>
+                <li>
+                    <a  [class.active]="activeTab === 'documents'" (click)="setActiveTab('documents');scrollToSection(documents)" (keydown.enter)="setActiveTab('documents');scrollToSection(documents)" tabindex="0">Documents</a>
+                </li>
+                <li>
+                    <a  [class.active]="activeTab === 'gallery'" (click)="setActiveTab('gallery');scrollToSection(gallery)" (keydown.enter)="setActiveTab('gallery');scrollToSection(gallery)" tabindex="0">Gallery</a>
+                </li>
+                <li>
+                    <a  [class.active]="activeTab === 'videos'" (click)="setActiveTab('videos');scrollToSection(videos)" (keydown.enter)="setActiveTab('videos');scrollToSection(videos)" tabindex="0">Videos</a>
+                </li>
+                <li>
+                    <a  [class.active]="activeTab === 'description'" (click)="setActiveTab('description');scrollToSection(description)"  (keydown.enter)="setActiveTab('description');scrollToSection(description)" tabindex="0">Description</a>
+                </li>
+                <li>
+                    <a  [class.active]="activeTab === 'floor-plan'" (click)="setActiveTab('floor-plan');scrollToSection(floorplan)" (keydown.enter)="setActiveTab('floorplan');scrollToSection(floorplan)" tabindex="0">Floor Plans</a>
+                </li>
+                <li>
+                    <a  [class.active]="activeTab === 'location'" (click)="setActiveTab('location');scrollToSection(location)" (keydown.enter)="setActiveTab('location');scrollToSection(location)" tabindex="0">Location</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Property Information -->
+        <div class="row" id="propertyinfo" #propertyinfo>
+           
+            <div class="col-lg-4">                           
+                <div class="property-info">
+                    <h4>Property Information</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                </div>
+            </div>
+            
+            <div class="col-lg-8"> 
+                <div class="add-property-wrap">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="review-form">
+                                <label for="Property Name">Property Name</label>  
+                                <input type="text" class="form-control" placeholder="Enter Name">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="review-form">
+                                <label for="Property Type">Property Type</label>
+                                <mat-select class="custom-mat-select" placeholder="Select">
+                                    <mat-option value="buy">Buy</mat-option>
+                                    <mat-option value="sale">Sale</mat-option>
+                                </mat-select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="review-form">
+                               <label for="Property Category">Property Category</label>
+                                <mat-select class="custom-mat-select" placeholder="Select">
+                                    <mat-option value="buy">Select</mat-option>
+                                    <mat-option value="sale">Apartment</mat-option>
+                                    <mat-option value="sale">Vila</mat-option>
+                                </mat-select>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="review-form">
+                                <label for="Currency Type">Currency Type</label>
+                                <mat-select class="custom-mat-select" placeholder="Select">
+                                    <mat-option value="select">Select Type</mat-option>
+                                    <mat-option value="cash">Cash</mat-option>
+                                    <mat-option value="bank">Bank Transfer</mat-option>
+                                </mat-select>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="review-form">
+                                <label for="Sale Price">Sale Price</label>
+                                <input type="text" class="form-control" placeholder="Enter Sale Price">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="review-form">
+                                <label for="Offer Price">Offer Price</label>
+                                <input type="text" class="form-control" placeholder="Enter Offer Price">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </div> 
+        <!-- /Property Information -->
+        
+        <!-- Property Details -->
+        <div class="row" id="property-details" #propertydetails>
+            
+            <div class="col-lg-4">                           
+                <div class="property-info">
+                    <h4>Property Details</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                </div>
+            </div>
+            
+            <div class="col-lg-8"> 
+                <div class="add-property-wrap">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="review-form">
+                                <label for="Property Id">Property Id</label>
+                                <input type="text" class="form-control" placeholder="Enter Value">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="review-form">
+                                <label for="Price">Price per Sqft</label>
+                                <input type="text" class="form-control" placeholder="Enter  Price">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="review-form">
+                                <label for="Structure">Structure type</label>
+                                <mat-select class="custom-mat-select" placeholder="Select">
+                                    <mat-option value="select">Select</mat-option>
+                                    <mat-option value="cash">Square</mat-option>
+                                    <mat-option value="bank">Rectangle</mat-option>
+                                </mat-select>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="review-form">
+                                <label for=" Bedooms">No of Bedooms</label>
+                                <input type="text" class="form-control" placeholder="Enter Value">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="review-form">
+                                <label for="Bathrooms">No of Bathrooms</label>
+                                <input type="text" class="form-control" placeholder="Enter  Value">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="review-form">
+                                <label for="Sqft">Sqft</label>
+                                <input type="text" class="form-control" placeholder="Enter Value">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="review-form">
+                                <label for="floors">No of Floors</label>
+                                <input type="text" class="form-control" placeholder="Enter Value">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="review-form">
+                                <label for="Garage">Garage size</label>
+                                <input type="text" class="form-control" placeholder="Enter Value">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="review-form">
+                                <label for="Available">Available From</label>
+                                <mat-select class="custom-mat-select" placeholder="Select">
+                                    <mat-option value="select">Select Year</mat-option>
+                                    <mat-option value="cash">2023</mat-option>
+                                    <mat-option value="bank">2022</mat-option>
+                                </mat-select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="review-form">
+                                <label for="Garage">No of Garage</label>
+                                <input type="text" class="form-control" placeholder="Enter Value">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="review-form">
+                                <label for="Year">Year Constructed</label>
+                               
+                                <mat-select class="custom-mat-select" placeholder="Select">
+                                    <mat-option value="select">Select Date</mat-option>
+                                    <mat-option value="cash">2023</mat-option>
+                                    <mat-option value="bank">2022</mat-option>
+                                </mat-select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </div> 
+        <!-- Property Details -->
+        
+        <!-- Amenities -->
+        <div class="row" id="amenities" #amenities>
+            
+            <div class="col-lg-4">                           
+                <div class="property-info">
+                    <h4>Amenities</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                </div>
+            </div>
+            
+            <div class="col-lg-8"> 
+                <div class="add-property-wrap">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="review-form">
+                                <label class="custom_check mb-0">
+                                    <input type="checkbox" name="amenity1" checked>
+                                    <span class="checkmark"></span>  Air Conditioning
+                                </label>
+                            </div>
+                            <div class="review-form">
+                                <label class="custom_check mb-0">
+                                    <input type="checkbox" name="amenity1" checked>
+                                    <span class="checkmark"></span> Lawn
+                                </label>
+                            </div>
+                            <div class="review-form">
+                                <label class="custom_check mb-0">
+                                    <input type="checkbox" name="amenity1">
+                                    <span class="checkmark"></span> Swimming Pool
+                                </label>
+                            </div>
+                            <div class="review-form">
+                                <label class="custom_check mb-0">
+                                    <input type="checkbox" name="amenity1">
+                                    <span class="checkmark"></span>  Barbeque
+                                </label>
+                            </div>
+                            <div class="review-form">
+                                <label class="custom_check mb-0">
+                                    <input type="checkbox" name="amenity1" checked>
+                                    <span class="checkmark"></span> Microwave
+                                </label>
+                            </div>
+                            <div class="review-form">
+                                <label class="custom_check mb-0">
+                                    <input type="checkbox" name="amenity1">
+                                    <span class="checkmark"></span> Wide-Open Spaces
+                                </label>
+                            </div>
+                            <div class="review-form">
+                                <label class="custom_check mb-0">
+                                    <input type="checkbox" name="amenity1" checked>
+                                    <span class="checkmark"></span> Billiards Table
+                                </label>
+                            </div>
+                            <div class="review-form">
+                                <label class="custom_check mb-0">
+                                    <input type="checkbox" name="amenity1">
+                                    <span class="checkmark"></span> Valet Trash
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="review-form">
+                                <label class="custom_check mb-0">
+                                    <input type="checkbox" name="amenity1">
+                                    <span class="checkmark"></span>  TV Cable
+                                </label>
+                            </div>
+                            <div class="review-form">
+                                <label class="custom_check mb-0">
+                                    <input type="checkbox" name="amenity1">
+                                    <span class="checkmark"></span> Dryer
+                                </label>
+                            </div>
+                            <div class="review-form">
+                                <label class="custom_check mb-0">
+                                    <input type="checkbox" name="amenity1">
+                                    <span class="checkmark"></span>  Outdoor Shower
+                                </label>
+                            </div>
+                            <div class="review-form">
+                                <label class="custom_check mb-0">
+                                    <input type="checkbox" name="amenity1" checked>
+                                    <span class="checkmark"></span> Washer
+                                </label>
+                            </div>
+                            <div class="review-form">
+                                <label class="custom_check mb-0">
+                                    <input type="checkbox" name="amenity1" checked>
+                                    <span class="checkmark"></span>  Gym
+                                </label>
+                            </div>
+                            <div class="review-form">
+                                <label class="custom_check mb-0">
+                                    <input type="checkbox" name="amenity1">
+                                    <span class="checkmark"></span> Parks 
+                                </label>
+                            </div>
+                            <div class="review-form">
+                                <label class="custom_check mb-0">
+                                    <input type="checkbox" name="amenity1" checked>
+                                    <span class="checkmark"></span>  Clubhouse
+                                </label>
+                            </div>
+                            <div class="review-form">
+                                <label class="custom_check mb-0">
+                                    <input type="checkbox" name="amenity1" checked>
+                                    <span class="checkmark"></span> Sporting Facilities
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="review-form">
+                                <label class="custom_check mb-0">
+                                    <input type="checkbox" name="amenity1">
+                                    <span class="checkmark"></span>  Refrigerator
+                                </label>
+                            </div>
+                            <div class="review-form">
+                                <label class="custom_check mb-0">
+                                    <input type="checkbox" name="amenity1" checked>
+                                    <span class="checkmark"></span> WiFi
+                                </label>
+                            </div>
+                            <div class="review-form">
+                                <label class="custom_check mb-0">
+                                    <input type="checkbox" name="amenity1">
+                                    <span class="checkmark"></span>  Laundry
+                                </label>
+                            </div>
+                            <div class="review-form">
+                                <label class="custom_check mb-0">
+                                    <input type="checkbox" name="amenity1" checked>
+                                    <span class="checkmark"></span> Sauna
+                                </label>
+                            </div>
+                            <div class="review-form">
+                                <label class="custom_check mb-0">
+                                    <input type="checkbox" name="amenity1">
+                                    <span class="checkmark"></span>  Window Coverings
+                                </label>
+                            </div>
+                            <div class="review-form">
+                                <label class="custom_check mb-0">
+                                    <input type="checkbox" name="amenity1" checked>
+                                    <span class="checkmark"></span> Rooftop Gardens
+                                </label>
+                            </div>
+                            <div class="review-form">
+                                <label class="custom_check mb-0">
+                                    <input type="checkbox" name="amenity1">
+                                    <span class="checkmark"></span>  Spa
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </div> 
+        <!-- /Amenities -->
+
+        <!-- Property Documents -->
+        <div class="row" id="documents" #documents>
+            <div class="col-lg-4">                           
+                <div class="property-info">
+                    <h4>Property Documents</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                </div>
+            </div>
+            <div class="col-lg-8"> 
+                <div class="add-property-wrap">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="review-form">
+                                <label for="Documents">Property Documents</label>
+                                <div class="upload-file">
+                                    <span>Select Documents</span>
+                                    <input type="file" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="review-form">
+                                <label for="ms" class="d-none d-md-block">&nbsp;</label>
+                                <button class="btn btn-primary btn-upload"><i class="bx bx-cloud-upload"></i>Upload Documents</button>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="upload-list">
+                                <ul>
+                                    <li>The maximum  size is 8 MB. Format: PDF. </li>
+                                    <li>Maximum number of files upload will be 5 files.</li>
+                                </ul>
+                                <p><i class="bx bx-check-double"></i>Document uploaded successfully</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </div> 
+        <!-- /Property Documents -->
+
+        <!-- Property gallery -->
+        <div class="row" id="gallery" #gallery>
+            <div class="col-lg-4">                           
+                <div class="property-info">
+                    <h4>Property Gallery</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                </div>
+            </div>
+            <div class="col-lg-8"> 
+                <div class="add-property-wrap">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="gallery-property">
+                                <ul>
+                                    <li>
+                                        <img src="assets/img/gallery/gallery-01.jpg" alt="Image">
+                                        <a href="javascript:void(0);"><i class="bx bx-trash"></i></a>
+                                    </li>
+                                    <li>
+                                        <img src="assets/img/gallery/gallery-02.jpg" alt="Image">
+                                        <a href="javascript:void(0);"><i class="bx bx-trash"></i></a>
+                                    </li>
+                                    <li>
+                                        <img src="assets/img/gallery/gallery-03.jpg" alt="Image">
+                                        <a href="javascript:void(0);"><i class="bx bx-trash"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="review-form">
+                                <label for="Photo">Photo</label>
+                                <div class="upload-file">
+                                    <span>Select Photo</span>
+                                    <input type="file" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="review-form">
+                                <label for="review" class="d-none d-md-block">&nbsp;</label>
+                                <button class="btn btn-primary btn-upload"><i class="bx bx-cloud-upload"></i>Upload Photos</button>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="upload-list">
+                                <ul>
+                                    <li>The maximum photo size is 8 MB. Formats: jpeg, jpg, png. Put the main picture first</li>
+                                    <li>Maximum number of files upload will be 10 files.</li>
+                                </ul>
+                                <p><i class="bx bx-check-double"></i>Photo uploaded successfully</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </div> 
+        <!-- /Property gallery -->
+
+        <!-- Property Video -->
+        <div class="row" id="videos" #videos>
+            <div class="col-lg-4">                           
+                <div class="property-info">
+                    <h4>Property Video</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                </div>
+            </div>
+            <div class="col-lg-8"> 
+                <div class="add-property-wrap">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="review-form">
+                                <label for="Video">Embed Video Link </label>
+                               
+                                <mat-select class="custom-mat-select" placeholder="Select">
+                                    <mat-option value="Youtube">Youtube</mat-option>
+                                    <mat-option value="Vimeo">Vimeo</mat-option>
+                                </mat-select>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="review-form">
+                                <label for="none" class="d-none d-md-block">&nbsp;</label>
+                                <input type="text" class="form-control" placeholder="Enter Video Link">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </div> 
+        <!-- /Property Video -->
+        
+        <!-- Property Description -->
+        <div class="row" id="description"  #description>
+            <div class="col-lg-4">                           
+                <div class="property-info">
+                    <h4>Description</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                </div>
+            </div>
+            <div class="col-lg-8"> 
+                <div class="add-property-wrap">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="review-form">
+                                <label for="Description">Enter Description of Property</label>
+                                <textarea class="form-control" rows="8" placeholder="Description"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </div> 
+        <!-- Property Description -->
+        
+        <!-- Floor Plan -->
+        <div class="row" id="floor-plan" #floorplan>
+             <div class="col-lg-4">                           
+                <div class="property-info">
+                    <h4>Floor Plan</h4>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                </div>
+            </div>
+            
+            <div class="col-lg-8"> 
+                <div class="add-property-wrap">
+                    <div class="add-info">
+                        <div class="row add-cont">
+                            <div class="col-md-12">
+                                <div class="review-form">
+                                    <label for="Plan Name">Plan Name</label>
+                                    <input type="text" class="form-control" placeholder="Plan Name">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="review-form">
+                                    <label for="Bedooms">No of Bedooms</label>
+                                    <input type="text" class="form-control" placeholder="Enter Value">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="review-form">
+                                    <label for="Bathrooms">No of Bathrooms</label>
+                                    <input type="text" class="form-control" placeholder="Enter Value">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="review-form">
+                                    <label for="Sqft">Sqft</label>
+                                    <input type="text" class="form-control" placeholder="Enter Value">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="review-form">
+                                    <label for="Currency Type">Currency Type</label>
+                                    <mat-select class="custom-mat-select" placeholder="Select">
+                                        <mat-option value="Youtube">Select</mat-option>
+                                        <mat-option value="Cash">Cash</mat-option>
+                                        <mat-option value="bank">Bank Transfer</mat-option>
+                                    </mat-select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="review-form">
+                                    <label for="Sale Price">Sale Price</label>
+                                    <input type="text" class="form-control" placeholder="Enter Value">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="review-form">
+                                    <label for="Description">Enter Description of Property</label>
+                                    <textarea class="form-control" rows="8" placeholder="Description"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="review-form">
+                                    <label for="Photo">Photo</label>
+                                    <div class="upload-file">
+                                        <span>Select Photo</span>
+                                        <input type="file" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="review-form">
+                                    <label for="ns" class="d-none d-md-block">&nbsp;</label>
+                                    <button class="btn btn-primary btn-upload"><i class="bx bx-cloud-upload"></i>Upload Photos</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div *ngFor="let item of items; let i = index" class="add-info">
+                        <div class="row add-cont">
+                            <div class="col-md-12">
+                                <div class="review-form">
+                                    <label for="Plan">Plan Name</label>
+                                    <input type="text" class="form-control" placeholder="Plan Name">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="review-form">
+                                    <label for="Bedooms">No of Bedooms</label>
+                                    <input type="text" class="form-control" placeholder="Enter Value">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="review-form">
+                                    <label for="Bathrooms">No of Bathrooms</label>
+                                    <input type="text" class="form-control" placeholder="Enter Value">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="review-form">
+                                    <label for="Sqft">Sqft</label>
+                                    <input type="text" class="form-control" placeholder="Enter Value">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="review-form">
+                                    <label for="Currency Type">Currency Type</label>
+                                    <mat-select class="custom-mat-select" placeholder="Select">
+                                        <mat-option value="Youtube">Select</mat-option>
+                                        <mat-option value="Cash">Cash</mat-option>
+                                        <mat-option value="bank">Bank Transfer</mat-option>
+                                    </mat-select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="review-form">
+                                    <label for="Sale Price">Sale Price</label>
+                                    <input type="text" class="form-control" placeholder="Enter Value">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="review-form">
+                                    <label for="Description">Enter Description of Property</label>
+                                    <textarea class="form-control" rows="8" placeholder="Description"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="review-form">
+                                    <label for="Photo">Photo</label>
+                                    <div class="upload-file">
+                                        <span>Select Photo</span>
+                                        <input type="file" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="review-form">
+                                    <label for="bs" class="d-none d-md-block">&nbsp;</label>
+                                    <button class="btn btn-primary btn-upload"><i class="bx bx-cloud-upload"></i>Upload Photos</button>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-2"><a href="javascript:void(0);"  (click)="deleteItem(i)" class="btn btn-danger trash"><i class="far fa-trash-alt"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="review-form text-end">
+                                <a href="javascript:void(0);" (click)="addMore()" class="add-more"><i class="bx bx-plus"></i> Add More</a>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>   
+        </div> 
+        <!-- /Floor Plan -->
+
+        <!-- Property location -->
+        <div class="row" id="location" #location>
+            <div class="col-lg-4">                           
+               <div class="property-info">
+                   <h4>Property Location</h4>
+                   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+               </div>
+           </div>
+           
+           <div class="col-lg-8"> 
+               <div class="add-property-wrap">
+                   <div class="row">
+                       <div class="col-md-12">
+                           <div class="review-form">
+                               <label for="Address">Address</label>
+                               <input type="text" class="form-control" placeholder="Enter Address">
+                           </div>
+                       </div>
+                       <div class="col-md-6">
+                           <div class="review-form">
+                               <label for="County">County / State</label>
+                              
+                               <mat-select class="custom-mat-select" placeholder="Select">
+                                <mat-option value="Youtube">Select Country</mat-option>
+                                <mat-option value="Cash">UK</mat-option>
+                                <mat-option value="bank">Newyork</mat-option>
+                            </mat-select>
+                           </div>
+                       </div>
+                       <div class="col-md-6">
+                           <div class="review-form">
+                               <label for="City">City</label>
+                               <input type="text" class="form-control" placeholder="Enter City">
+                           </div>
+                       </div>
+                       <div class="col-md-6">
+                           <div class="review-form">
+                               <label for="Landmark">Landmark</label>
+                               <input type="text" class="form-control" placeholder="Enter Landmark">
+                           </div>
+                       </div>
+                       <div class="col-md-6">
+                           <div class="review-form">
+                               <label for="Zip">Zip Code</label>
+                               <input type="text" class="form-control" placeholder="Enter Zip Code">
+                           </div>
+                       </div>
+                       <div class="col-md-12">
+                        <div class="review-form google-maps">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2967.8862835683544!2d-73.98256668525309!3d41.93829486962529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89dd0ee3286615b7%3A0x42bfa96cc2ce4381!2s132%20Kingston%20St%2C%20Kingston%2C%20NY%2012401%2C%20USA!5e0!3m2!1sen!2sin!4v1670922579281!5m2!1sen!2sin"  allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                   </div>
+               </div>
+           </div>   
+       </div> 
+       <!-- /Property location -->	
+
+       <!-- Property location -->
+        <div class="row">
+            <div class="col-md-12">                           
+               <div class="property-submit">
+                  <a href="javascript:void(0);" class="btn btn-lightred">Reset</a>
+                  <a [routerLink]="routes.buyPropertyGrid" class="btn btn-primary">Add Property</a>
+               </div>
+           </div>
+        </div>
+
+    </div>
+</div>
+<!-- /Content -->

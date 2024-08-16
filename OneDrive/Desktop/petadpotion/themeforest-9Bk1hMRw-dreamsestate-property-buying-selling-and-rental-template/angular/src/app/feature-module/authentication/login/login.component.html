@@ -1,0 +1,97 @@
+<div class="container">
+  <!-- Header -->
+  <header class="log-header">
+    <a [routerLink]="routes.home"
+      ><img class="img-fluid logo-dark" src="assets/img/logo.svg" alt="Logo"
+    /></a>
+  </header>
+  <!-- /Header -->
+  <div class="login-wrapper">
+    <div class="loginbox">
+      <div class="login-auth">
+        <div class="login-auth-wrap">
+          <h1>Hey There!!! Welcome Back.</h1>
+          <form >
+            <div class="form-group">
+              <label for="Email" class="form-label">Email <span>*</span></label>
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Enter Email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="Password" class="form-label">Password <span>*</span></label>
+              <div class="pass-group">
+                <input
+                  type="password"
+                  class="form-control pass-input"
+                  placeholder="Enter Password"
+                  [type]="show_password ? 'password' : 'text'"
+                />
+                <span
+                [ngClass]="
+                  show_password === true
+                    ? 'fas fa-eye-slash toggle-password'
+                    : 'fas fa-eye toggle-password'
+                "
+                          (click)="togglePassword()"
+                          (keydown.enter)="togglePassword()"
+                          tabindex="0"
+                          role="button"
+                        ></span>
+              </div>
+            </div>
+            <div class="form-group mb-5">
+              <a class="forgot-link" [routerLink]="routes.forgotPassword"
+                >Forgot Password ?</a
+              >
+            </div>
+            <div class="form-group">
+              <label class="custom_check mt-0 mb-0"
+                ><span>Remember me</span>
+                <input type="checkbox" name="remeber" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <a [routerLink]="routes.home" class="btn btn-outline-light w-100 btn-size"
+              >Sign In</a
+            >
+            <div class="login-or">
+              <span class="span-or-log">Or, Sign in with your email</span>
+            </div>
+            <!-- Social Login -->
+            <div class="social-login">
+              <a
+                href="javascript:void(0);"
+                class="d-flex align-items-center justify-content-center form-group btn google-login w-100"
+                ><span
+                  ><img
+                    src="assets/img/icons/google.svg"
+                    class="img-fluid"
+                    alt="Google" /></span
+                >Sign in with Google</a
+              >
+            </div>
+            <div class="social-login">
+              <a
+                href="javascript:void(0);"
+                class="mb-0 d-flex align-items-center justify-content-center form-group btn google-login w-100"
+                ><span
+                  ><img
+                    src="assets/img/icons/facebook.svg"
+                    class="img-fluid"
+                    alt="Facebook" /></span
+                >Sign in with Facebook</a
+              >
+            </div>
+            <!-- /Social Login -->
+            <div class="text-center dont-have">
+              Don't have an account ? <a [routerLink]="routes.register">Sign Up</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+<div class="container">
+    <!-- Header -->
+    <header class="log-header">
+        <a [routerLink] = "routes.home"><img class="img-fluid logo-dark" src="assets/img/logo.svg" alt="Logo"></a>
+    </header>
+    <!-- /Header -->
+    <div class="error-box">
+        <img src="assets/img/500.png" class="img-fluid" alt="Unexpected error">
+        <h1>500 Unexpected Error</h1>
+        <p class="error-content">We’re having some issuesat the moment. we’ll have it fixed in no time.</p>
+        <div class="back-button">					
+            <a [routerLink] = "routes.home" class="btn">Back to Home</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,44 @@
+[
+    {
+        "id": "1",
+        "Icon": "property-icon-1.svg",
+        "Title": "Houses",
+        "Property": "30 Properties"
+    },
+    {
+        "id": "2",
+        "Icon": "property-icon-2.svg",
+        "Title": "Offices",
+        "Property": "25 Properties"
+    },
+    {
+        "id": "3",
+        "Icon": "property-icon-3.svg",
+        "Title": "Villas",
+        "Property": "40 Properties"
+    },
+    {
+        "id": "4",
+        "Icon": "property-icon-4.svg",
+        "Title": "Apartment",
+        "Property": "35 Properties"
+    },
+    {
+        "id": "5",
+        "Icon": "property-icon-3.svg",
+        "Title": "Villas",
+        "Property": "40 Properties"
+    },
+    {
+        "id": "6",
+        "Icon": "property-icon-1.svg",
+        "Title": "Houses",
+        "Property": "30 Properties"
+    },
+    {
+        "id": "7",
+        "Icon": "property-icon-4.svg",
+        "Title": "Apartment",
+        "Property": "35 Properties"
+    }
+]

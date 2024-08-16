@@ -1,0 +1,50 @@
+[
+    {
+       "Image" : "agent-list-01.jpg",
+       "Star" : "5.0",
+       "Reviews" : "(20 Reviews)",
+       "Name" : "Mike Rutter",
+       "Role" : "Selling Agent",
+       "Listing" : "60 Listings" 
+    },
+    {
+       "Image" : "agent-list-02.jpg",
+       "Star" : "5.0",
+       "Reviews" : "(12 Reviews)",
+       "Name" : "Pamela",
+       "Role" : "Buying Agent",
+       "Listing" : "30 Listings" 
+    },
+    {
+       "Image" : "agent-list-03.jpg",
+       "Star" : "5.0",
+       "Reviews" : "(25 Reviews)",
+       "Name" : "Enriquez",
+       "Role" : "Selling Agent",
+       "Listing" : "40 Listings" 
+    },
+    {
+       "Image" : "agent-list-04.jpg",
+       "Star" : "5.0",
+       "Reviews" : "(35 Reviews)",
+       "Name" : "Lowe",
+       "Role" : "Selling Agent",
+       "Listing" : "55 Listings" 
+    },
+    {
+       "Image" : "agent-list-05.jpg",
+       "Star" : "5.0",
+       "Reviews" : "(50 Reviews)",
+       "Name" : "Gregory",
+       "Role" : "Buying Agent",
+       "Listing" : "45 Listings" 
+    },
+    {
+       "Image" : "agent-list-06.jpg",
+       "Star" : "5.0",
+       "Reviews" : "(80 Reviews)",
+       "Name" : "Lee Rutter",
+       "Role" : "Selling Agent",
+       "Listing" : "50 Listings" 
+    }
+]

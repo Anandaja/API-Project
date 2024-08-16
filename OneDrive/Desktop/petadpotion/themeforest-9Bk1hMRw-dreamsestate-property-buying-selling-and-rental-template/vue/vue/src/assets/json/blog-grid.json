@@ -1,0 +1,56 @@
+[
+    {
+        "Type" : "Property",
+        "LocationImage" : "blog-1.jpg",
+        "Title" : "How to achieve financial independence",
+        "Topic" : "There are many variations of passages of lorem ipsum available.",
+        "Name" : "Rafael",
+        "Image" : "avatar-01.jpg",
+        "Date" : "Posted on : 15 Jan 2024"
+    },
+    {
+        "Type" : "Villa",
+        "LocationImage" : "blog-2.jpg",
+        "Title" : "The most popular cities for homebuyers",
+        "Topic" : "There are many variations of passages of lorem ipsum available.",
+        "Name" : "John",
+        "Image" : "avatar-03.jpg",
+        "Date" : "Posted on : 15 Jan 2024"
+    },
+    {
+        "Type" : "Godown",
+        "LocationImage" : "blog-3.jpg",
+        "Title" : "Learn how real estate really shapes our future",
+        "Topic" : "There are many variations of passages of lorem ipsum available.",
+        "Name" : "Eric Krok",
+        "Image" : "avatar-05.jpg",
+        "Date" : "Posted on : 15 Jan 2024"
+    },
+    {
+        "Type" : "Factory",
+        "LocationImage" : "blog-4.jpg",
+        "Title" : "30 Real Estate Blogs Every Realtor Should....",
+        "Topic" : "There are many variations of passages of lorem ipsum available.",
+        "Name" : "Anif",
+        "Image" : "avatar-07.jpg",
+        "Date" : "Posted on : 15 Jan 2024"
+    },
+    {
+        "Type" : "Guest house",
+        "LocationImage" : "blog-5.jpg",
+        "Title" : "Here Are Easy Ways To Know How To...",
+        "Topic" : "There are many variations of passages of lorem ipsum available.",
+        "Name" : "Ramos",
+        "Image" : "avatar-08.jpg",
+        "Date" : "Posted on : 14 Jan 2024"
+    },
+    {
+        "Type" : "Guest house",
+        "LocationImage" : "blog-6.jpg",
+        "Title" : "Importance of Virtual Reality in Real Estate",
+        "Topic" : "There are many variations of passages of lorem ipsum available.",
+        "Name" : "Patrick",
+        "Image" : "avatar-10.jpg",
+        "Date" : "Posted on : 12 Jan 2024"
+    }
+]

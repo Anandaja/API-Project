@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "Image": "avatar-01.jpg",
+        "Name": "Horace Cole"
+    },
+    {
+        "id": 2,
+        "Image": "avatar-02.jpg",
+        "Name": "Karen Maria"
+    },
+    {
+        "id": 3,
+        "Image": "avatar-03.jpg",
+        "Name": "Jack Nitzsche"
+    },
+    {
+        "id": 4,
+        "Image": "avatar-04.jpg",
+        "Name": "Sofia Retz"
+    },
+    {
+        "id": 5,
+        "Image": "avatar-05.jpg",
+        "Name": "John Doe"
+    }
+]

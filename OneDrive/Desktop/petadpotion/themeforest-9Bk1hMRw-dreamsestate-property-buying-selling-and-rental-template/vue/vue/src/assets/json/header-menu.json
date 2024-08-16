@@ -1,0 +1,430 @@
+[
+    {
+        "tittle": "Home",
+        "showAsTab": false,
+        "separateRoute": true,
+        "routes": "/index",
+        "hasSubRoute": false,
+        "showSubRoute": false,
+        "active_link": "index"
+    },
+    {
+        "tittle": "Listing",
+        "showAsTab": false,
+        "separateRoute": false,
+        "active_link": "buy",
+        "active_link1": "rent",
+        "menu": [
+            {
+                "menuValue": "Buy Property",
+                "hasSubRoute": true,
+                "showSubRoute": false,
+                "active_link": "buy",
+                "subMenus": [
+                    {
+                        "menuValue": "Buy Grid",
+                        "routes": "/buy/buy-property-grid",
+                        "hasSubRoute": false,
+                        "showSubRoute": false,
+                        "active_link": "/buy/buy-property-grid",
+                        "subMenus": []
+                    },
+                    {
+                        "menuValue": "Buy List",
+                        "routes": "/buy/buy-property-list",
+                        "hasSubRoute": false,
+                        "showSubRoute": false,
+                        "active_link": "/buy/buy-property-list",
+                        "subMenus": []
+                    },
+                    {
+                        "menuValue": "Buy Grid With Sidebar",
+                        "routes": "/buy/buy-property-grid-sidebar",
+                        "hasSubRoute": false,
+                        "showSubRoute": false,
+                        "active_link": "/buy/buy-property-grid-sidebar",
+                        "subMenus": []
+                    },
+                    {
+                        "menuValue": "Buy List With Sidebar",
+                        "routes": "/buy/buy-property-list-sidebar",
+                        "hasSubRoute": false,
+                        "showSubRoute": false,
+                        "active_link": "/buy/buy-property-list-sidebar",
+                        "subMenus": []
+                    },
+                    {
+                        "menuValue": "Buy Grid With Map",
+                        "routes": "/buy/buy-grid-map",
+                        "active_link": "/buy/buy-grid-map",
+                        "hasSubRoute": false,
+                        "showSubRoute": false,
+                        "subMenus": []
+                    },
+                    {
+                        "menuValue": "Buy List With Map",
+                        "routes": "/buy/buy-list-map",
+                        "active_link": "/buy/buy-list-map",
+                        "hasSubRoute": false,
+                        "showSubRoute": false,
+                        "subMenus": []
+                    },
+                    {
+                        "menuValue": "Buy Details",
+                        "routes": "/buy/buy-details",
+                        "active_link": "/buy/buy-details",
+                        "hasSubRoute": false,
+                        "showSubRoute": false,
+                        "subMenus": []
+                    }
+                ]
+            },
+            {
+                "menuValue": "Rent Property",
+                "hasSubRoute": true,
+                "showSubRoute": false,
+                "active_link": "rent",
+                "subMenus": [
+                    {
+                        "menuValue": "Rent Grid",
+                        "routes": "/rent/rent-property-grid",
+                        "hasSubRoute": false,
+                        "showSubRoute": false,
+                        "subMenus": []
+                    },
+                    {
+                        "menuValue": "Rent List",
+                        "routes": "/rent/rent-property-list",
+                        "hasSubRoute": false,
+                        "showSubRoute": false,
+                        "subMenus": []
+                    },
+                    {
+                        "menuValue": "Rent Grid With Sidebar",
+                        "routes": "/rent/rent-property-grid-sidebar",
+                        "hasSubRoute": false,
+                        "showSubRoute": false,
+                        "subMenus": []
+                    },
+                    {
+                        "menuValue": "Rent List With Sidebar",
+                        "routes": "/rent/rent-property-list-sidebar",
+                        "hasSubRoute": false,
+                        "showSubRoute": false,
+                        "subMenus": []
+                    },
+                    {
+                        "menuValue": "Rent Grid With Map",
+                        "routes": "/rent/rent-grid-map",
+                        "hasSubRoute": false,
+                        "showSubRoute": false,
+                        "subMenus": []
+                    },
+                    {
+                        "menuValue": "Rent List With Map",
+                        "routes": "/rent/rent-list-map",
+                        "hasSubRoute": false,
+                        "showSubRoute": false,
+                        "subMenus": []
+                    },
+                    {
+                        "menuValue": "Rent Details",
+                        "routes": "/rent/rent-details",
+                        "hasSubRoute": false,
+                        "showSubRoute": false,
+                        "subMenus": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "tittle": "Agent",
+        "showAsTab": false,
+        "separateRoute": false,
+        "active_link": "agent",
+        "menu": [
+            {
+                "menuValue": "Agent Grid",
+                "routes": "/agent/agent-grid",
+                "hasSubRoute": false,
+                "showSubRoute": false,
+                "active_link": "/agent/agent-grid",
+                "subMenus": []
+            },
+            {
+                "menuValue": "Agent List",
+                "routes": "/agent/agent-list",
+                "hasSubRoute": false,
+                "showSubRoute": false,
+                "active_link": "/agent/agent-list",
+                "subMenus": []
+            },
+            {
+                "menuValue": "Agent Grid Sidebar",
+                "routes": "/agent/agent-grid-sidebar",
+                "hasSubRoute": false,
+                "showSubRoute": false,
+                "active_link": "/agent/agent-grid-sidebar",
+                "subMenus": []
+            },
+            {
+                "menuValue": "Agent List Sidebar",
+                "routes": "/agent/agent-list-sidebar",
+                "hasSubRoute": false,
+                "showSubRoute": false,
+                "active_link": "/agent/agent-list-sidebar",
+                "subMenus": []
+            },
+            {
+                "menuValue": "Agent Details",
+                "routes": "/agent/agent-details",
+                "hasSubRoute": false,
+                "showSubRoute": false,
+                "active_link": "/agent/agent-details",
+                "subMenus": []
+            }
+        ]
+    },
+    {
+        "tittle": "Agency",
+        "showAsTab": false,
+        "separateRoute": false,
+        "active_link": "agency",
+        "menu": [
+            {
+                "menuValue": "Agency Grid",
+                "routes": "/agency/agency-grid",
+                "hasSubRoute": false,
+                "showSubRoute": false,
+                "active_link": "/agency/agency-grid",
+                "subMenus": []
+            },
+            {
+                "menuValue": "Agency List",
+                "routes": "/agency/agency-list",
+                "hasSubRoute": false,
+                "showSubRoute": false,
+                "active_link": "/agency/agency-list",
+                "subMenus": []
+            },
+            {
+                "menuValue": "Agency Grid Sidebar",
+                "routes": "/agency/agency-grid-sidebar",
+                "hasSubRoute": false,
+                "showSubRoute": false,
+                "active_link": "/agency/agency-grid-sidebar",
+                "subMenus": []
+            },
+            {
+                "menuValue": "Agency List Sidebar",
+                "routes": "/agency/agency-list-sidebar",
+                "hasSubRoute": false,
+                "showSubRoute": false,
+                "active_link": "/agency/agency-list-sidebar",
+                "subMenus": []
+            },
+            {
+                "menuValue": "Agency Details",
+                "routes": "/agency/agency-details",
+                "hasSubRoute": false,
+                "showSubRoute": false,
+                "active_link": "/agency/agency-details",
+                "subMenus": []
+            }
+        ]
+    },
+    {
+        "tittle": "Pages",
+        "showAsTab": false,
+        "separateRoute": false,
+        "active_link": "pages",
+        "menu": [
+            {
+                "menuValue": "About Us",
+                "routes": "/pages/about-us",
+                "hasSubRoute": false,
+                "showSubRoute": false,
+                "active_link": "/pages/about-us",
+                "subMenus": []
+            },
+            {
+                "menuValue": "Authentication",
+                "hasSubRoute": true,
+                "showSubRoute": false,
+                "subMenus": [
+                    {
+                        "menuValue": "Signup",
+                        "routes": "/register",
+                        "hasSubRoute": false,
+                        "showSubRoute": false,
+                        "subMenus": []
+                    },
+                    {
+                        "menuValue": "Signin",
+                        "routes": "/",
+                        "hasSubRoute": false,
+                        "showSubRoute": false,
+                        "subMenus": []
+                    },
+                    {
+                        "menuValue": "Forgot Password",
+                        "routes": "/forgot-password",
+                        "hasSubRoute": false,
+                        "showSubRoute": false,
+                        "subMenus": []
+                    },
+                    {
+                        "menuValue": "Reset Password",
+                        "routes": "/reset-password",
+                        "hasSubRoute": false,
+                        "showSubRoute": false,
+                        "subMenus": []
+                    }
+                ]
+            },
+            {
+                "menuValue": "Invoice Details",
+                "routes": "/pages/invoice-details",
+                "hasSubRoute": false,
+                "showSubRoute": false,
+                "active_link": "/pages/invoice-details",
+                "subMenus": []
+            },
+            {
+                "menuValue": "Error Page",
+                "hasSubRoute": true,
+                "showSubRoute": false,
+                "subMenus": [
+                    {
+                        "menuValue": "404 Error",
+                        "routes": "/pages/error-404",
+                        "hasSubRoute": false,
+                        "showSubRoute": false,
+                        "subMenus": []
+                    },
+                    {
+                        "menuValue": "500 Error",
+                        "routes": "/pages/error-500",
+                        "hasSubRoute": false,
+                        "showSubRoute": false,
+                        "subMenus": []
+                    }
+                ]
+            },
+            {
+                "menuValue": "Pricing",
+                "routes": "/pages/pricing",
+                "hasSubRoute": false,
+                "showSubRoute": false,
+                "active_link": "/pages/pricing",
+                "subMenus": []
+            },
+            {
+                "menuValue": "FAQ",
+                "routes": "/pages/faq",
+                "hasSubRoute": false,
+                "showSubRoute": false,
+                "active_link": "/pages/faq",
+                "subMenus": []
+            },
+            {
+                "menuValue": "Gallery",
+                "routes": "/pages/gallery",
+                "hasSubRoute": false,
+                "showSubRoute": false,
+                "active_link": "/pages/gallery",
+                "subMenus": []
+            },
+            {
+                "menuValue": "Our Team",
+                "routes": "/pages/our-team",
+                "hasSubRoute": false,
+                "showSubRoute": false,
+                "active_link": "/pages/our-team",
+                "subMenus": []
+            },
+            {
+                "menuValue": "Testimonials",
+                "routes": "/pages/testimonial",
+                "hasSubRoute": false,
+                "showSubRoute": false,
+                "active_link": "/pages/testimonial",
+                "subMenus": []
+            },
+            {
+                "menuValue": "Terms & Conditions",
+                "routes": "/pages/terms-condition",
+                "hasSubRoute": false,
+                "showSubRoute": false,
+                "active_link": "/pages/terms-condition",
+                "subMenus": []
+            },
+            {
+                "menuValue": "Privacy Policy",
+                "routes": "/pages/privacy-policy",
+                "hasSubRoute": false,
+                "showSubRoute": false,
+                "active_link": "/pages/privacy-policy",
+                "subMenus": []
+            },
+            {
+                "menuValue": "Maintenance",
+                "routes": "/pages/maintenance",
+                "hasSubRoute": false,
+                "showSubRoute": false,
+                "active_link": "maintenance",
+                "subMenus": []
+            },
+            {
+                "menuValue": "Coming Soon",
+                "routes": "/pages/coming-soon",
+                "hasSubRoute": false,
+                "showSubRoute": false,
+                "active_link": "coming-soon",
+                "subMenus": []
+            }
+        ]
+    },
+    {
+        "tittle": "Blog",
+        "showAsTab": false,
+        "separateRoute": false,
+        "active_link": "blogs",
+        "menu": [
+            {
+                "menuValue": "Blog List",
+                "routes": "/blogs/blog-list",
+                "hasSubRoute": false,
+                "showSubRoute": false,
+                "active_link": "/blogs/blog-list",
+                "subMenus": []
+            },
+            {
+                "menuValue": "Blog Grid",
+                "routes": "/blogs/blog-grid",
+                "hasSubRoute": false,
+                "showSubRoute": false,
+                "active_link": "/blogs/blog-grid",
+                "subMenus": []
+            },
+            {
+                "menuValue": "Blog Details",
+                "routes": "/blogs/blog-details",
+                "hasSubRoute": false,
+                "showSubRoute": false,
+                "active_link": "/blogs/blog-details",
+                "subMenus": []
+            }
+        ]
+    },
+    {
+        "tittle": "Contact Us",
+        "showAsTab": false,
+        "separateRoute": true,
+        "routes": "/contact-us",
+        "hasSubRoute": false,
+        "showSubRoute": false,
+        "active_link": "contact-us"
+    }
+]

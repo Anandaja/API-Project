@@ -1,0 +1,484 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb">
+    <div class="container">
+        <div class="bread-crumb-head">
+            <div class="breadcrumb-title">
+                <h2>Rent Property List with Map</h2>
+            </div>
+            <div class="breadcrumb-list">
+                <ul>
+                    <li><a [routerLink]="routes.home">Home </a></li>
+                    <li>Rent Property List with Map</li>
+                </ul>
+            </div>
+        </div>
+        <div class="breadcrumb-border-img">
+            <img src="assets/img/bg/line-bg.png" class="img-fluid" alt="">
+        </div>
+    </div>
+</div>
+<!-- Breadcrumb -->
+
+<!-- Content -->
+<div class="content p-0">
+    <div class="container-fluid">
+        <div class="row">
+
+            <!-- Map -->
+            <div class="col-xl-5 col-sm-12 map-right grid-map map-top">
+                <div id="map" class="map-listing"></div>
+            </div>
+            <!-- /Map -->
+
+            <div class="col-xl-7 col-sm-12 map-content">
+
+                <!-- Sidebar -->
+                <div class="advanced-search">
+                    <h3>Advanced Search</h3>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="review-form form-wrap ">
+                                <input type="text" class="form-control" placeholder="Location">
+                                <span class="form-icon">
+                                    <i class="bx bx-map"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-12">
+                            <div class="review-form form-wrap ">
+                                <mat-select class="custom-mat-select" placeholder="Categories">
+                                    <mat-option>Categories</mat-option>
+                                    <mat-option value="Apartments">Apartments</mat-option>
+                                    <mat-option value="Condos">Condos</mat-option>
+                                    <mat-option value="Houses">Houses</mat-option>
+                                </mat-select>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-12">
+                            <div class="review-form form-wrap ">
+                                <mat-select class="custom-mat-select" placeholder="Bedrooms">
+                                    <mat-option value="Bedrooms">Bedrooms</mat-option>
+                                    <mat-option value="4 Bedrooms">4 Bedrooms</mat-option>
+                                    <mat-option value="2 Bedrooms">2 Bedrooms</mat-option>
+                                </mat-select>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-12">
+                            <div class="review-form form-wrap ">
+                                <mat-select class="custom-mat-select" placeholder="Bedrooms">
+                                    <mat-option value="Bedrooms">Bedrooms</mat-option>
+                                    <mat-option value="4 Bedrooms">4 Bedrooms</mat-option>
+                                    <mat-option value="2 Bedrooms">2 Bedrooms</mat-option>
+                                </mat-select>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-12">
+                            <div class="review-form form-wrap ">
+                                <input type="text" class="form-control" placeholder="Min Sqft">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-12">
+                            <div class="review-form form-wrap ">
+                                <input type="text" class="form-control" placeholder="Min Price">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-12">
+                            <div class="review-form form-wrap ">
+                                <input type="text" class="form-control" placeholder="Max Price">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-12">
+                            <div class="review-form form-wrap ">
+                                <mat-select class="custom-mat-select" placeholder="Reviews">
+                                    <mat-option value="Reviews">Reviews</mat-option>
+                                    <mat-option value="1 Reviews">1 Review</mat-option>
+                                    <mat-option value="2 Reviews">2 Reviews</mat-option>
+                                </mat-select>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-12">
+                            <div class="review-form form-wrap ">
+                                <input type="text" class="form-control" placeholder="Amenities">
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="review-form-btn">
+                                <a href="javascript:void(0);" class="btn btn-primary">Apply Filter</a>
+                                <a href="javascript:void(0);" class="reset-btn">Reset Selection</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Sidebar -->
+
+                <!-- Result -->
+                <div class="result-map">
+                    <div class="showing-result-head">
+                        <div class="row align-items-center">
+                            <div class="col-md-3">
+                                <div class="result-show">
+                                    <h5>Showing result <span>06</span> of <span>125</span></h5>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="row">
+                                    <div class="col-md-12 d-flex justify-content-md-end flex-wrap">
+                                        <div class="sort-by grid-head">
+                                            <div>
+                                                <span>Sort By</span>
+                                            </div>
+                                            <div class="review-form">
+                                                <mat-select class="custom-mat-select" placeholder="Default">
+                                                    <mat-option value="0">Default</mat-option>
+                                                    <mat-option value="1">10 AM - 12 PM</mat-option>
+                                                    <mat-option value="2">12 PM - 2 PM</mat-option>
+                                                    <mat-option value="3">02 PM - 04 PM</mat-option>
+                                                </mat-select>
+                                            </div>
+                                        </div>
+                                        <div class="grid-list-view">
+                                            <ul class="justify-content-end">
+                                                <li><a [routerLink]="routes.rentPropertyGrid"><i
+                                                            class="bx bx-grid"></i></a></li>
+                                                <li><a [routerLink]="routes.rentPropertyList"><i
+                                                            class="bx bx-list-ul"></i></a></li>
+                                                <li><a [routerLink]="routes.rentGridMap" class="active"><i
+                                                            class="bx bxs-map"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Result -->
+
+                <div class="feature-property-sec for-rent rent-grid p-0 bg-white rental-map">
+                    <div class="row ">
+
+                        <!-- Rent List -->
+                        <div class="col-lg-12">
+                            <div class="product-custom">
+                                <div class="profile-widget rent-list-view">
+                                    <div class="doc-img">
+                                        <a [routerLink]="routes.rentDetails" class="property-img">
+                                            <img class="img-fluid" alt="Product image"
+                                                src="assets/img/rent/rent-list-01.jpg">
+                                        </a>
+                                        <div class="featured">
+                                            <span>Featured</span>
+                                        </div>
+                                        <div class="new-featured">
+                                            <span>New</span>
+                                        </div>
+                                        <div class="product-amount">
+                                            <h5><span>$4,500 </span> / night</h5>
+                                        </div>
+                                        <a href="javascript:void(0)" (click)="toggleSelect(1)">
+                                            <div class="favourite" [ngClass]="{ selected: isSelectAdded[1] }">
+                                                <span><i class="fa-regular fa-heart"></i></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="pro-content">
+                                        <div class="list-head">
+                                            <div class="rating">
+                                                <span class="rating-count  d-inline-flex">
+                                                    <i class="fa fa-star checked"></i>
+                                                    <i class="fa fa-star checked"></i>
+                                                    <i class="fa fa-star checked"></i>
+                                                    <i class="fa fa-star checked"></i>
+                                                    <i class="fa fa-star checked"></i>
+                                                </span>
+                                                <span class="rating-review">Excellent</span>
+                                            </div>
+                                            <h3 class="title">
+                                                <a [routerLink]="routes.rentDetails" tabindex="-1">Royal Apartment</a>
+                                            </h3>
+                                            <p><i class="feather icon-map-pin"></i>Jl. Seminyak Asri, No.4, Kuta</p>
+                                        </div>
+                                        <ul class="d-flex details">
+                                            <li>
+                                                <img src="assets/img/icons/bed-icon.svg" alt="bed-icon">
+                                                5 Beds
+                                            </li>
+                                            <li>
+                                                <img src="assets/img/icons/bath-icon.svg" alt="bath-icon">
+                                                2 Baths
+                                            </li>
+                                            <li>
+                                                <img src="assets/img/icons/building-icon.svg" alt="building-icon">
+                                                11000 Sqft
+                                            </li>
+                                        </ul>
+                                        <ul class="property-category d-flex justify-content-between align-items-center">
+                                            <li class="user-info">
+                                                <a href="javascript:void(0);"><img
+                                                        src="assets/img/profiles/avatar-01.jpg" class="img-fluid avatar"
+                                                        alt=""></a>
+                                                <div class="user-name">
+                                                    <a href="javascript:void(0);">Marc Silva</a>
+                                                    <p>Newyork</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a [routerLink]="routes.rentalOrder" class="btn-primary">Book Now</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Rent List -->
+
+                        <!-- Rent List -->
+                        <div class="col-lg-12">
+                            <div class="product-custom">
+                                <div class="profile-widget rent-list-view">
+                                    <div class="doc-img">
+                                        <a [routerLink]="routes.rentDetails" class="property-img">
+                                            <img class="img-fluid" alt="Product image"
+                                                src="assets/img/rent/rent-list-02.jpg">
+                                        </a>
+                                        <div class="product-amount">
+                                            <h5><span>$8,500 </span> / night</h5>
+                                        </div>
+                                        <a href="javascript:void(0)" (click)="toggleSelect(2)">
+                                            <div class="favourite" [ngClass]="{ selected: isSelectAdded[2] }">
+                                                <span><i class="fa-regular fa-heart"></i></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="pro-content">
+                                        <div class="list-head">
+                                            <div class="rating">
+                                                <span class="rating-count  d-inline-flex">
+                                                    <i class="fa fa-star checked"></i>
+                                                    <i class="fa fa-star checked"></i>
+                                                    <i class="fa fa-star checked"></i>
+                                                    <i class="fa fa-star checked"></i>
+                                                    <i class="fa fa-star checked"></i>
+                                                </span>
+                                                <span class="rating-review">Excellent</span>
+                                            </div>
+                                            <h3 class="title">
+                                                <a [routerLink]="routes.rentDetails" tabindex="-1">Grand Mahaka</a>
+                                            </h3>
+                                            <p><i class="feather icon-map-pin"></i>Jl. Bandung Permai, No.6, Bandung</p>
+                                        </div>
+                                        <ul class="d-flex details">
+                                            <li>
+                                                <img src="assets/img/icons/bed-icon.svg" alt="bed-icon">
+                                                3 Beds
+                                            </li>
+                                            <li>
+                                                <img src="assets/img/icons/bath-icon.svg" alt="bath-icon">
+                                                2 Baths
+                                            </li>
+                                            <li>
+                                                <img src="assets/img/icons/building-icon.svg" alt="building-icon">
+                                                9000 Sqft
+                                            </li>
+                                        </ul>
+                                        <ul class="property-category d-flex justify-content-between align-items-center">
+                                            <li class="user-info">
+                                                <a href="javascript:void(0);"><img
+                                                        src="assets/img/profiles/avatar-02.jpg" class="img-fluid avatar"
+                                                        alt=""></a>
+                                                <div class="user-name">
+                                                    <a href="javascript:void(0);">Scott Gwin</a>
+                                                    <p>Minipoliies</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a [routerLink]="routes.rentalOrder" class="btn-primary">Book Now</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Rent List -->
+
+                        <!-- Rent List -->
+                        <div class="col-lg-12">
+                            <div class="product-custom">
+                                <div class="profile-widget rent-list-view">
+                                    <div class="doc-img">
+                                        <a [routerLink]="routes.rentDetails" class="property-img">
+                                            <img class="img-fluid" alt="Product image"
+                                                src="assets/img/rent/rent-list-03.jpg">
+                                        </a>
+                                        <div class="featured">
+                                            <span>Featured</span>
+                                        </div>
+                                        <div class="product-amount">
+                                            <h5><span>$2,200 </span> / night</h5>
+                                        </div>
+                                        <a href="javascript:void(0)" (click)="toggleSelect(3)">
+                                            <div class="favourite" [ngClass]="{ selected: isSelectAdded[3] }">
+                                                <span><i class="fa-regular fa-heart"></i></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="pro-content">
+                                        <div class="list-head">
+                                            <div class="rating">
+                                                <span class="rating-count  d-inline-flex">
+                                                    <i class="fa fa-star checked"></i>
+                                                    <i class="fa fa-star checked"></i>
+                                                    <i class="fa fa-star checked"></i>
+                                                    <i class="fa fa-star checked"></i>
+                                                    <i class="fa fa-star checked"></i>
+                                                </span>
+                                                <span class="rating-review">Excellent</span>
+                                            </div>
+                                            <h3 class="title">
+                                                <a [routerLink]="routes.rentDetails" tabindex="-1">Lunaria Residence</a>
+                                            </h3>
+                                            <p><i class="feather icon-map-pin"></i>Jl. Surabaya Jaya, No.10, Surabaya
+                                            </p>
+                                        </div>
+                                        <ul class="d-flex details">
+                                            <li>
+                                                <img src="assets/img/icons/bed-icon.svg" alt="bed-icon">
+                                                2 Beds
+                                            </li>
+                                            <li>
+                                                <img src="assets/img/icons/bath-icon.svg" alt="bath-icon">
+                                                4 Baths
+                                            </li>
+                                            <li>
+                                                <img src="assets/img/icons/building-icon.svg" alt="building-icon">
+                                                12000 Sqft
+                                            </li>
+                                        </ul>
+                                        <ul class="property-category d-flex justify-content-between align-items-center">
+                                            <li class="user-info">
+                                                <a href="javascript:void(0);"><img
+                                                        src="assets/img/profiles/avatar-03.jpg" class="img-fluid avatar"
+                                                        alt=""></a>
+                                                <div class="user-name">
+                                                    <a href="javascript:void(0);">Kell Robinson</a>
+                                                    <p>USA</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a [routerLink]="routes.rentalOrder" class="btn-primary">Book Now</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Rent List -->
+
+                        <!-- Rent List -->
+                        <div class="col-lg-12">
+                            <div class="product-custom">
+                                <div class="profile-widget rent-list-view">
+                                    <div class="doc-img">
+                                        <a [routerLink]="routes.rentDetails" class="property-img">
+                                            <img class="img-fluid" alt="Product image"
+                                                src="assets/img/rent/rent-list-04.jpg">
+                                        </a>
+                                        <div class="featured">
+                                            <span>Featured</span>
+                                        </div>
+                                        <div class="product-amount">
+                                            <h5><span>$2,200 </span> / night</h5>
+                                        </div>
+                                        <a href="javascript:void(0)" (click)="toggleSelect(4)">
+                                            <div class="favourite" [ngClass]="{ selected: isSelectAdded[4] }">
+                                                <span><i class="fa-regular fa-heart"></i></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="pro-content">
+                                        <div class="list-head">
+                                            <div class="rating">
+                                                <span class="rating-count  d-inline-flex">
+                                                    <i class="fa fa-star checked"></i>
+                                                    <i class="fa fa-star checked"></i>
+                                                    <i class="fa fa-star checked"></i>
+                                                    <i class="fa fa-star checked"></i>
+                                                    <i class="fa fa-star checked"></i>
+                                                </span>
+                                                <span class="rating-review">Excellent</span>
+                                            </div>
+                                            <h3 class="title">
+                                                <a [routerLink]="routes.rentDetails" tabindex="-1">Grand Mahaka</a>
+                                            </h3>
+                                            <p><i class="feather icon-map-pin"></i>Jl. Bandung Permai, No.6, Bandung</p>
+                                        </div>
+                                        <ul class="d-flex details">
+                                            <li>
+                                                <img src="assets/img/icons/bed-icon.svg" alt="bed-icon">
+                                                4 Beds
+                                            </li>
+                                            <li>
+                                                <img src="assets/img/icons/bath-icon.svg" alt="bath-icon">
+                                                4 Baths
+                                            </li>
+                                            <li>
+                                                <img src="assets/img/icons/building-icon.svg" alt="building-icon">
+                                                3500 Sqft
+                                            </li>
+                                        </ul>
+                                        <ul class="property-category d-flex justify-content-between align-items-center">
+                                            <li class="user-info">
+                                                <a href="javascript:void(0);"><img
+                                                        src="assets/img/profiles/avatar-07.jpg" class="img-fluid avatar"
+                                                        alt=""></a>
+                                                <div class="user-name">
+                                                    <a href="javascript:void(0);">Silya Reckz</a>
+                                                    <p>Newyork</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a [routerLink]="routes.rentalOrder" class="btn-primary">Book Now</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Rent List -->
+
+                        <!-- Pagination -->
+                        <div class="col-lg-12">
+                            <div class="grid-pagination grid-pagination-map">
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item prev">
+                                        <a class="page-link" href="javascript:void(0);"><i
+                                                class="fa-solid fa-arrow-left"></i> Prev</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="javascript:void(0);">1</a>
+                                    </li>
+                                    <li class="page-item active">
+                                        <a class="page-link" href="javascript:void(0);">2</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="javascript:void(0);">3</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="javascript:void(0);">15</a>
+                                    </li>
+                                    <li class="page-item next">
+                                        <a class="page-link" href="javascript:void(0);">Next <i
+                                                class="fa-solid fa-arrow-right"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /Pagination -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Content -->

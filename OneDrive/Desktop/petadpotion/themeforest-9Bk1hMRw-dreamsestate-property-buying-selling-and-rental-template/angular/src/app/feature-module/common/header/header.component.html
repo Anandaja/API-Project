@@ -1,0 +1,124 @@
+<!-- Header -->
+<header class="header header-fix">
+  <div class="header-top" *ngIf="base === 'home'">
+    <div class="template-ad">
+      <img src="assets/img/icons/badge-icon.svg" alt="icon">
+      <h5>No 1, Realestate Website to Buy / Sell Your Place <span>First Listing Free!!!</span></h5>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg header-nav">
+    <div class="navbar-header">
+      <a id="mobile_btn" href="javascript:void(0);" (click)="toggleSidebar()">
+        <span class="bar-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </a>
+      <a [routerLink]="routes.home" class="navbar-brand logo">
+        <img src="assets/img/logo.svg" class="img-fluid" alt="Logo">
+      </a>
+    </div>
+    <div class="main-menu-wrapper">
+      <div class="menu-header">
+        <a [routerLink]="routes.home" class="menu-logo">
+          <img src="assets/img/logo.svg" class="img-fluid" alt="Logo">
+        </a>
+
+        <a id="menu_close" class="menu-close" href="javascript:void(0);" (click)="hideSidebar()">
+          <i class="fas fa-times"></i>
+        </a>
+      </div>
+      <ul class="main-nav">
+        @for (mainMenus of header; track mainMenus) {
+        @if (mainMenus.separateRoute === true) {
+        <li routerLinkActive="active">
+          <a [routerLink]="mainMenus.routes">{{ mainMenus.tittle }}</a>
+        </li>
+        }
+        @if (mainMenus.separateRoute === false) {
+        <li class="has-submenu" routerLinkActive="active">
+          <a href="javascript:void(0);" (click)="mainMenus.showAsTab = !mainMenus.showAsTab">{{ mainMenus.tittle }} <i
+              class="fas fa-chevron-down"></i></a>
+          <ul class="submenu" [ngClass]="{
+                        'd-block': mainMenus.showAsTab === true
+                      }">
+            @for (menu of mainMenus.menu; track menu) {
+            @if (menu.hasSubRoute === false) {
+            <li>
+              <a [routerLink]="menu.routes" routerLinkActive="active">{{ menu.menuValue }}</a>
+            </li>
+            }
+            @if (menu.hasSubRoute === true) {
+            <li class="has-submenu" routerLinkActive="active">
+              <a (click)="menu.showSubRoute = !menu.showSubRoute" [routerLink]="menu.routes">{{ menu.menuValue }}</a>
+              <ul class="submenu" [ngClass]="{
+                                'd-block': menu.showSubRoute === true
+                              }">
+                @for (subMenu of menu.subMenus; track subMenu) {
+                <li>
+                  <a routerLinkActive="active" [routerLink]="subMenu.routes">{{
+                    subMenu.menuValue
+                    }}</a>
+                </li>
+                }
+              </ul>
+            </li>
+            }
+            }
+          </ul>
+        </li>
+        }
+        }
+        <li class="searchbar">
+          <a href="javascript:void(0);" (click)="showSearchPopup()">
+            <img src="assets/img/icons/search-icon.svg" alt="img">
+          </a>
+        </li>
+      </ul>
+    </div>
+    <ul class="nav header-navbar-rht">
+      <li class="new-property-btn">
+        <a [routerLink]="routes.addNewProperty">
+          <i class="bx bxs-plus-circle"></i> Add New Property
+        </a>
+      </li>
+      <li>
+        <a [routerLink]="routes.register" class="btn btn-primary"><i class="feather icon-user-plus"></i>Sign Up</a>
+      </li>
+      <li>
+        <a [routerLink]="routes.login" class="btn sign-btn"><i class="feather icon-unlock"></i>Sign In</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<!-- /Header -->
+<!-- Search -->
+<div class="search-popup js-search-popup " [ngClass]="{'visible': searchPopup === true}">
+  <a href="javascript:void(0);" class="close-button" id="search-close" aria-label="Close search"
+    (click)="showSearchPopup()">
+    <i class="fa fa-close"></i>
+  </a>
+  <div class="popup-inner">
+    <div class="inner-container">
+      <form class="search-form" id="search-form">
+        <h3>What Are You Looking for?</h3>
+        <div class="search-form-box flex">
+          <input type="text" class="search-input" placeholder="Type a  Keyword...." id="search-input"
+            aria-label="Type to search" role="searchbox" autocomplete="off">
+          <button type="button" class="search-icon" (click)="navigate()"><i class="bx bx-search"></i></button>
+        </div>
+        <h5>Popular Properties</h5>
+        <ul>
+          <li><a [routerLink]="routes.rentPropertyGrid">Beautiful Condo Room</a></li>
+          <li><a [routerLink]="routes.rentPropertyGrid">Royal Apartment</a></li>
+          <li><a [routerLink]="routes.rentPropertyGrid">Grand Villa House</a></li>
+          <li><a [routerLink]="routes.rentPropertyGrid">Grand Mahaka</a></li>
+          <li><a [routerLink]="routes.rentPropertyGrid">Lunaria Residence</a></li>
+          <li><a [routerLink]="routes.rentPropertyGrid">Stephen Alexander Homes</a></li>
+        </ul>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- /Search -->

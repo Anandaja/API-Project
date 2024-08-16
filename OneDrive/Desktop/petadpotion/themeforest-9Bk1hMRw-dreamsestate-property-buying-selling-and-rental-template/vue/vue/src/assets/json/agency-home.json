@@ -1,0 +1,38 @@
+[
+    {
+        "Amount": "$3,500",
+        "Title": "Lunaria Residence",
+        "Location": "518-520 8th Ave, New York, NY 10018, USA",
+        "Beds": "2 Beds",
+        "Baths": "1 Baths",
+        "Sqft": "5000 Sqft",
+        "Name": "Burdette",
+        "Topic": "Cambridge",
+        "Image": "avatar-04.jpg",
+        "ProductImage": "product-9.jpg"
+    },
+    {
+        "Amount": "$3,500",
+        "Title": "Grand Mahaka",
+        "Location": "470 Park Ave S, New York, NY 10016",
+        "Beds": "2 Beds",
+        "Baths": "1 Baths",
+        "Sqft": "1200 Sqft",
+        "Name": "Karen Maria",
+        "Topic": "South Dokata",
+        "Image": "avatar-02.jpg",
+        "ProductImage": "product-7.jpg"
+    },
+    {
+        "Amount": "$1,500",
+        "Title": "Royal Apartment",
+        "Location": "82-25 Parsons Blvd, Jamaica, NY 11432, USA",
+        "Beds": "3 Beds",
+        "Baths": "2 Baths",
+        "Sqft": "15000 Sqft",
+        "Name": "Scott Gwin",
+        "Topic": "Minipoliies",
+        "Image": "avatar-03.jpg",
+        "ProductImage": "product-8.jpg"
+    }
+]

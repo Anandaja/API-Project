@@ -1,0 +1,802 @@
+<!-- Breadcrumb -->
+<div class="breadcrumb">
+    <div class="container">
+        <div class="bread-crumb-head">
+            <div class="breadcrumb-title">
+                <h2>Rent Property Grid with Sidebar</h2>
+            </div>
+            <div class="breadcrumb-list">
+                <ul>
+                    <li><a [routerLink]="routes.home">Home </a></li>
+                    <li>Rent Property Grid with Sidebar</li>
+                </ul>
+            </div>
+        </div>
+        <div class="breadcrumb-border-img">
+            <img src="assets/img/bg/line-bg.png" alt="Line Image">
+        </div>
+    </div>
+</div>
+<!-- Breadcrumb -->
+
+<!-- Feature Property For Rent -->
+<section class="feature-property-sec for-rent content">
+    <div class="container">
+
+        <!-- Sort Result -->
+        <div class="showing-result-head">
+            <div class="row align-items-center">
+                <div class="col-lg-3">
+                    <div class="result-show">
+                        <h5>Showing result <span>06</span> of <span>125</span></h5>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="sort-result">
+                        <div class="sort-by grid-head">
+                            <div>
+                                <p>Sort By</p>
+                            </div>
+                            <div class="review-form">
+                                <mat-select class="custom-mat-select" placeholder="Default">
+                                    <mat-option value="0">Default</mat-option>
+                                    <mat-option value="1">A-Z</mat-option>
+                                </mat-select>
+                            </div>
+                        </div>
+                        <div class="price-range grid-head">
+                            <div>
+                                <p>Price Range</p>
+                            </div>
+                            <div class="review-form">
+                                <mat-select class="custom-mat-select" placeholder="Low to High">
+                                    <mat-option value="low">Low to High</mat-option>
+                                    <mat-option value="high">High to Low</mat-option>
+                                </mat-select>
+                            </div>
+                        </div>
+                        <div class="grid-list-view">
+                            <ul>
+                                <li><a [routerLink]="routes.rentPropertyGridSidebar" class="active"><i
+                                            class="bx bx-grid"></i></a></li>
+                                <li><a [routerLink]="routes.rentPropertyListSidebar"><i class="bx bx-list-ul"></i></a>
+                                </li>
+                                <li><a [routerLink]="routes.rentGridMap"><i class="bx bxs-map"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Sort Result -->
+
+        <div class="row">
+
+            <!-- Sidebar -->
+            <div class="col-lg-4 theiaStickySidebar">
+                <div class="left-sidebar-widget stickybar">
+
+                    <!-- Advanced Search -->
+                    <div class="collapse-card">
+                        <h4 class="card-title">
+                            <a class="collapsed" data-bs-toggle="collapse" href="#advance-search"
+                                aria-expanded="false">Advanced Search</a>
+                        </h4>
+                        <div id="advance-search" class="card-collapse collapse show">
+                            <ul class="show-list">
+                                <li class="review-form form-wrap">
+                                    <input type="text" class="form-control" placeholder="Type Keywords">
+                                    <span class="form-icon">
+                                        <i class="bx bx-search-alt"></i>
+                                    </span>
+                                </li>
+                                <li class="review-form">
+                                    <mat-select class="custom-mat-select" placeholder="Select Location">
+                                        <mat-option value="Chicago">Chicago</mat-option>
+                                        <mat-option value="Newyork">Newyork</mat-option>
+                                    </mat-select>
+                                </li>
+                                <li class="review-form">
+                                    <mat-select class="custom-mat-select" placeholder="No of Bedrooms">
+                                        <mat-option value="0">No of Bedrooms</mat-option>
+                                        <mat-option value="4">4</mat-option>
+                                        <mat-option value="2">2</mat-option>
+                                    </mat-select>
+                                </li>
+                                <li class="review-form">
+                                    <mat-select class="custom-mat-select" placeholder="No of Bedrooms">
+                                        <mat-option value="0">No of Bedrooms</mat-option>
+                                        <mat-option value="3">3</mat-option>
+                                        <mat-option value="2">2</mat-option>
+                                    </mat-select>
+                                </li>
+                                <li class="review-form">
+                                    <input type="text" class="form-control" placeholder="Min Sqft">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /Advanced Search -->
+
+                    <!-- Categories -->
+                    <div class="collapse-card">
+                        <h4 class="card-title">
+                            <a class="collapsed" data-bs-toggle="collapse" href="#categiries"
+                                aria-expanded="false">Categories</a>
+                        </h4>
+                        <div id="categiries" class="card-collapse collapse show">
+                            <ul class="checkbox-list term-list">
+                                <li>
+                                    <label class="custom_check">
+                                        <input type="checkbox" name="username">
+                                        <span class="checkmark"></span> Apartments (45)
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="custom_check">
+                                        <input type="checkbox" name="username">
+                                        <span class="checkmark"></span> Condos (32)
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="custom_check">
+                                        <input type="checkbox" name="username">
+                                        <span class="checkmark"></span> Houses (24)
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="custom_check">
+                                        <input type="checkbox" name="username">
+                                        <span class="checkmark"></span> Industrial (41)
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="custom_check">
+                                        <input type="checkbox" name="username">
+                                        <span class="checkmark"></span> Land (15)
+                                    </label>
+                                </li>
+                                <li class="toggleable" [class.hidden]="!categories">
+                                    <label class="custom_check">
+                                        <input type="checkbox" name="username" />
+                                        <span class="checkmark"></span> Offices (11)
+                                    </label>
+                                </li>
+                                <li [class.more]="!categories" [class.less]="categories">
+                                    <a href="javascript:void(0);" (click)="showCategories()">
+                                        <a *ngIf="!categories" href="javascript:void(0);"><i
+                                                class="bx bx-plus-circle"></i> More
+                                            Categories</a>
+                                        <a *ngIf="categories" href="javascript:void(0);"><i
+                                                class="bx bx-minus-circle"></i> Less
+                                            Categories</a>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /Categories -->
+
+                    <!-- Amenities -->
+                    <div class="collapse-card">
+                        <h4 class="card-title">
+                            <a class="collapsed" data-bs-toggle="collapse" href="#amenities"
+                                aria-expanded="false">Amenities</a>
+                        </h4>
+                        <div id="amenities" class="card-collapse collapse show">
+                            <ul class="checkbox-list amene-list">
+                                <li>
+                                    <label class="custom_check">
+                                        <input type="checkbox" name="username">
+                                        <span class="checkmark"></span> Back Yard (35)
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="custom_check">
+                                        <input type="checkbox" name="username">
+                                        <span class="checkmark"></span> Central Air (32)
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="custom_check">
+                                        <input type="checkbox" name="username">
+                                        <span class="checkmark"></span> Chair Accessible (24)
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="custom_check">
+                                        <input type="checkbox" name="username">
+                                        <span class="checkmark"></span> Elevator (41)
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="custom_check">
+                                        <input type="checkbox" name="username">
+                                        <span class="checkmark"></span> Fireplace (15)
+                                    </label>
+                                </li>
+                                <li class="toggleable" [class.hidden]="!amenities">
+                                    <label class="custom_check">
+                                        <input type="checkbox" name="username" />
+                                        <span class="checkmark"></span> Front Yard (11)
+                                    </label>
+                                </li>
+                                <li [class.more]="!amenities" [class.less]="amenities">
+                                    <a href="javascript:void(0);" (click)="showAmenities()">
+                                        <a *ngIf="!amenities" href="javascript:void(0);"><i
+                                                class="bx bx-plus-circle"></i> More
+                                            Amenities</a>
+                                        <a *ngIf="amenities" href="javascript:void(0);"><i
+                                                class="bx bx-minus-circle"></i> Less
+                                            Amenities</a>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /Amenities -->
+
+                    <!-- Pricing -->
+                    <div class="collapse-card">
+                        <h4 class="card-title">
+                            <a class="collapsed" data-bs-toggle="collapse" href="#pricing"
+                                aria-expanded="false">Pricing</a>
+                        </h4>
+                        <div id="pricing" class="card-collapse collapse show">
+                            <ul class="price-filter">
+                                <li class="d-flex justify-content-between">
+                                    <div class="caption">
+                                        <h5>Price Range : </h5>
+                                        <span id="slider-range-value1"> {{ sliderValue1 }}</span> to
+                                        <span id="slider-range-value2"> {{ sliderValue2 }}</span>
+                                    </div>
+                                </li>
+                                <li class="price-filter-inner">
+                                    <div id="slider-range" class="range-bottom">
+                                        <mat-slider min="0" max="1000" (input)="updateSliderValues()">
+                                            <input value="0" matSliderStartThumb [(ngModel)]="sliderValue1"
+                                                (input)="updateSliderValues()">
+                                            <input value="700" matSliderEndThumb [(ngModel)]="sliderValue2"
+                                                (input)="updateSliderValues()">
+                                        </mat-slider>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /Pricing -->
+
+                    <!-- Reviews -->
+                    <div class="collapse-card">
+                        <h4 class="card-title">
+                            <a class="collapsed" data-bs-toggle="collapse" href="#review"
+                                aria-expanded="false">Reviews</a>
+                        </h4>
+                        <div id="review" class="card-collapse collapse show">
+                            <ul class="price-filter">
+                                <li>
+                                    <label class="custom_check">
+                                        <input type="checkbox" name="username">
+                                        <span class="checkmark"></span>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="custom_check">
+                                        <input type="checkbox" name="username">
+                                        <span class="checkmark"></span>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="custom_check">
+                                        <input type="checkbox" name="username">
+                                        <span class="checkmark"></span>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="custom_check">
+                                        <input type="checkbox" name="username">
+                                        <span class="checkmark"></span>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="custom_check">
+                                        <input type="checkbox" name="username">
+                                        <span class="checkmark"></span>
+                                        <i class="fa-solid fa-star"></i>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /Reviews -->
+
+                    <!-- Apply filter -->
+                    <div class="apply-btn">
+                        <button type="submit" class="btn btn-primary">Apply Filter</button>
+                        <a href="javascript:void(0)" class="reset-btn">Reset Selection</a>
+                    </div>
+                    <!-- /Apply filter -->
+
+                </div>
+            </div>
+            <!-- /Sidebar -->
+
+            <div class="col-lg-8">
+                <div class="row">
+
+                    <!-- Rent grid -->
+                    <div class="col-lg-6 col-md-6">
+                        <div class="product-custom">
+                            <div class="profile-widget">
+                                <div class="doc-img">
+                                    <a [routerLink]="routes.rentDetails" class="property-img">
+                                        <img class="img-fluid" alt="Property Image"
+                                            src="assets/img/product/product-6.jpg">
+                                    </a>
+                                    <div class="product-amount">
+                                        <h5><span>$2,200 </span> / Night</h5>
+                                    </div>
+                                    <div class="featured">
+                                        <span>Featured</span>
+                                    </div>
+                                    <div class="new-featured">
+                                        <span>New</span>
+                                    </div>
+                                    <a href="javascript:void(0)" (click)="toggleFavourite(1)">
+                                        <div class="favourite" [ngClass]="{'selected': isFavourite[1]}">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="pro-content">
+                                    <div class="rating">
+                                        <span class="rating-count">
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star checked"></i>
+                                        </span>
+                                        <span class="rating-review">Excellent</span>
+                                    </div>
+                                    <h3 class="title">
+                                        <a [routerLink]="routes.rentDetails">Beautiful Condo Room</a>
+                                    </h3>
+                                    <p><i class="feather icon-map-pin"></i> 318-S Oakley Blvd, Chicago, IL 60612, USA
+                                    </p>
+                                    <ul class="d-flex details">
+                                        <li>
+                                            <img src="assets/img/icons/bed-icon.svg" alt="bed-icon">
+                                            4 Beds
+                                        </li>
+                                        <li>
+                                            <img src="assets/img/icons/bath-icon.svg" alt="bath-icon">
+                                            4 Baths
+                                        </li>
+                                        <li>
+                                            <img src="assets/img/icons/building-icon.svg" alt="building-icon">
+                                            35000 Sqft
+                                        </li>
+                                    </ul>
+                                    <ul class="property-category d-flex justify-content-between align-items-center">
+                                        <li class="user-info">
+                                            <a [routerLink]="routes.agentGrid"><img
+                                                    src="assets/img/profiles/avatar-01.jpg" class="img-fluid avatar"
+                                                    alt="User"></a>
+                                            <div class="user-name">
+                                                <a [routerLink]="routes.agentGrid">Marc Silva</a>
+                                                <p>Newyork</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a [routerLink]="routes.rentDetails" class="btn-primary">Book Now</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Rent grid -->
+
+                    <!-- Rent grid -->
+                    <div class="col-lg-6 col-md-6">
+                        <div class="product-custom">
+                            <div class="profile-widget">
+                                <div class="doc-img">
+                                    <a [routerLink]="routes.rentDetails" class="property-img">
+                                        <img class="img-fluid" alt="Property Image"
+                                            src="assets/img/product/product-7.jpg">
+                                    </a>
+                                    <div class="product-amount">
+                                        <h5><span>$1,400 </span> / Night</h5>
+                                    </div>
+                                    <div class="featured">
+                                        <span>Featured</span>
+                                    </div>
+                                    <a href="javascript:void(0)" (click)="toggleFavourite(2)">
+                                        <div class="favourite" [ngClass]="{'selected': isFavourite[2]}">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="pro-content">
+                                    <div class="rating">
+                                        <span class="rating-count">
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star checked"></i>
+                                        </span>
+                                        <span class="rating-review">Excellent</span>
+                                    </div>
+                                    <h3 class="title">
+                                        <a [routerLink]="routes.rentDetails">Grand Mahaka</a>
+                                    </h3>
+                                    <p><i class="feather icon-map-pin"></i> 470 Park Ave S, New York, NY 10016</p>
+                                    <ul class="d-flex details">
+                                        <li>
+                                            <img src="assets/img/icons/bed-icon.svg" alt="bed-icon">
+                                            2 Beds
+                                        </li>
+                                        <li>
+                                            <img src="assets/img/icons/bath-icon.svg" alt="bath-icon">
+                                            1 Baths
+                                        </li>
+                                        <li>
+                                            <img src="assets/img/icons/building-icon.svg" alt="building-icon">
+                                            5000 Sqft
+                                        </li>
+                                    </ul>
+                                    <ul class="property-category d-flex justify-content-between align-items-center">
+                                        <li class="user-info">
+                                            <a [routerLink]="routes.agentGrid"><img
+                                                    src="assets/img/profiles/avatar-02.jpg" class="img-fluid avatar"
+                                                    alt="User"></a>
+                                            <div class="user-name">
+                                                <a [routerLink]="routes.agentGrid">Karen Maria</a>
+                                                <p>South Dokata</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a [routerLink]="routes.rentDetails" class="btn-primary">Book Now</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Rent grid -->
+
+                    <!-- Rent grid -->
+                    <div class="col-lg-6 col-md-6">
+                        <div class="product-custom">
+                            <div class="profile-widget">
+                                <div class="doc-img">
+                                    <a [routerLink]="routes.rentDetails" class="property-img">
+                                        <img class="img-fluid" alt="Property Image"
+                                            src="assets/img/product/product-8.jpg">
+                                    </a>
+                                    <div class="product-amount">
+                                        <h5><span>$1,500 </span> / Night</h5>
+                                    </div>
+                                    <div class="featured">
+                                        <span>Featured</span>
+                                    </div>
+                                    <a href="javascript:void(0)" (click)="toggleSelect(1)">
+                                        <div class="favourite" [ngClass]="{ selected: isSelectAdded[1] }">
+                                            <span><i class="fa-regular fa-heart"></i></span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="pro-content">
+                                    <div class="rating">
+                                        <span class="rating-count">
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star checked"></i>
+                                        </span>
+                                        <span class="rating-review">Excellent</span>
+                                    </div>
+                                    <h3 class="title">
+                                        <a [routerLink]="routes.rentDetails">Royal Apartment</a>
+                                    </h3>
+                                    <p><i class="feather icon-map-pin"></i> 82-25 Parsons Blvd, Jamaica, NY 11432, USA
+                                    </p>
+                                    <ul class="d-flex details">
+                                        <li>
+                                            <img src="assets/img/icons/bed-icon.svg" alt="bed-icon">
+                                            3 Beds
+                                        </li>
+                                        <li>
+                                            <img src="assets/img/icons/bath-icon.svg" alt="bath-icon">
+                                            3 Baths
+                                        </li>
+                                        <li>
+                                            <img src="assets/img/icons/building-icon.svg" alt="building-icon">
+                                            12000 Sqft
+                                        </li>
+                                    </ul>
+                                    <ul class="property-category d-flex justify-content-between align-items-center">
+                                        <li class="user-info">
+                                            <a [routerLink]="routes.agentGrid"><img
+                                                    src="assets/img/profiles/avatar-03.jpg" class="img-fluid avatar"
+                                                    alt="User"></a>
+                                            <div class="user-name">
+                                                <a [routerLink]="routes.agentGrid">Scott Gwin</a>
+                                                <p>Minipoliies</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a [routerLink]="routes.rentDetails" class="btn-primary">Book Now</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Rent grid -->
+
+                    <!-- Rent grid -->
+                    <div class="col-lg-6 col-md-6">
+                        <div class="product-custom">
+                            <div class="profile-widget">
+                                <div class="doc-img">
+                                    <a [routerLink]="routes.rentDetails" class="property-img">
+                                        <img class="img-fluid" alt="Property Image"
+                                            src="assets/img/product/product-9.jpg">
+                                    </a>
+                                    <div class="product-amount">
+                                        <h5><span>$3,500 </span> / Night</h5>
+                                    </div>
+                                    <div class="featured">
+                                        <span>Featured</span>
+                                    </div>
+                                    <a href="javascript:void(0)" (click)="toggleSelect(2)">
+                                        <div class="favourite" [ngClass]="{ selected: isSelectAdded[2] }">
+                                            <span><i class="fa-regular fa-heart"></i></span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="pro-content">
+                                    <div class="rating">
+                                        <span class="rating-count">
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                        <span class="rating-review">Excellent</span>
+                                    </div>
+                                    <h3 class="title">
+                                        <a [routerLink]="routes.rentDetails">Lunaria Residence</a>
+                                    </h3>
+                                    <p><i class="feather icon-map-pin"></i> 518-520 8th Ave, New York, NY 10018, USA</p>
+                                    <ul class="d-flex details">
+                                        <li>
+                                            <img src="assets/img/icons/bed-icon.svg" alt="bed-icon">
+                                            4 Beds
+                                        </li>
+                                        <li>
+                                            <img src="assets/img/icons/bath-icon.svg" alt="bath-icon">
+                                            2 Baths
+                                        </li>
+                                        <li>
+                                            <img src="assets/img/icons/building-icon.svg" alt="building-icon">
+                                            31000 Sqft
+                                        </li>
+                                    </ul>
+                                    <ul class="property-category d-flex justify-content-between align-items-center">
+                                        <li class="user-info">
+                                            <a [routerLink]="routes.agentGrid"><img
+                                                    src="assets/img/profiles/avatar-04.jpg" class="img-fluid avatar"
+                                                    alt="User"></a>
+                                            <div class="user-name">
+                                                <a [routerLink]="routes.agentGrid">Burdette</a>
+                                                <p>Cambridge</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a [routerLink]="routes.rentDetails" class="btn-primary">Book Now</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Rent grid -->
+
+                    <!-- Rent grid -->
+                    <div class="col-lg-6 col-md-6">
+                        <div class="product-custom">
+                            <div class="profile-widget">
+                                <div class="doc-img">
+                                    <a [routerLink]="routes.rentDetails" class="property-img">
+                                        <img class="img-fluid" alt="Property Image"
+                                            src="assets/img/product/product-10.jpg">
+                                    </a>
+                                    <div class="product-amount">
+                                        <h5><span>$4,500 </span> / Night</h5>
+                                    </div>
+                                    <div class="featured">
+                                        <span>Featured</span>
+                                    </div>
+                                    <a href="javascript:void(0)" (click)="toggleFavourite(3)">
+                                        <div class="favourite" [ngClass]="{'selected': isFavourite[3]}">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="pro-content">
+                                    <div class="rating">
+                                        <span class="rating-count">
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star checked"></i>
+                                        </span>
+                                        <span class="rating-review">Excellent</span>
+                                    </div>
+                                    <h3 class="title">
+                                        <a [routerLink]="routes.rentDetails">Grand Villa house</a>
+                                    </h3>
+                                    <p><i class="feather icon-map-pin"></i> 470 Park Ave S, New York, NY 10016</p>
+                                    <ul class="d-flex details">
+                                        <li>
+                                            <img src="assets/img/icons/bed-icon.svg" alt="bed-icon">
+                                            4 Beds
+                                        </li>
+                                        <li>
+                                            <img src="assets/img/icons/bath-icon.svg" alt="bath-icon">
+                                            2 Baths
+                                        </li>
+                                        <li>
+                                            <img src="assets/img/icons/building-icon.svg" alt="building-icon">
+                                            11000 Sqft
+                                        </li>
+                                    </ul>
+                                    <ul class="property-category d-flex justify-content-between align-items-center">
+                                        <li class="user-info">
+                                            <a [routerLink]="routes.agentGrid"><img
+                                                    src="assets/img/profiles/avatar-05.jpg" class="img-fluid avatar"
+                                                    alt="User"></a>
+                                            <div class="user-name">
+                                                <a [routerLink]="routes.agentGrid">Kell Robinson</a>
+                                                <p>USA</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a [routerLink]="routes.rentDetails" class="btn-primary">Book Now</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Rent grid -->
+
+                    <!-- Rent grid -->
+                    <div class="col-lg-6 col-md-6">
+                        <div class="product-custom">
+                            <div class="profile-widget">
+                                <div class="doc-img">
+                                    <a [routerLink]="routes.rentDetails" class="property-img">
+                                        <img class="img-fluid" alt="Property Image"
+                                            src="assets/img/product/product-11.jpg">
+                                    </a>
+                                    <div class="product-amount">
+                                        <h5><span>$2,400 </span> / Night</h5>
+                                    </div>
+                                    <div class="featured">
+                                        <span>Featured</span>
+                                    </div>
+                                    <a href="javascript:void(0)" (click)="toggleSelect(3)">
+                                        <div class="favourite" [ngClass]="{ selected: isSelectAdded[3] }">
+                                            <span><i class="fa-regular fa-heart"></i></span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="pro-content">
+                                    <div class="rating">
+                                        <span class="rating-count">
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star checked"></i>
+                                            <i class="fa-solid fa-star checked"></i>
+                                        </span>
+                                        <span class="rating-review">Excellent</span>
+                                    </div>
+                                    <h3 class="title">
+                                        <a [routerLink]="routes.rentDetails">Stephen Alexander Homes</a>
+                                    </h3>
+                                    <p><i class="feather icon-map-pin"></i> 122 N Morgan St, Chicago, IL 60607, USA</p>
+                                    <ul class="d-flex details">
+                                        <li>
+                                            <img src="assets/img/icons/bed-icon.svg" alt="bed-icon">
+                                            1 Beds
+                                        </li>
+                                        <li>
+                                            <img src="assets/img/icons/bath-icon.svg" alt="bath-icon">
+                                            1 Baths
+                                        </li>
+                                        <li>
+                                            <img src="assets/img/icons/building-icon.svg" alt="building-icon">
+                                            7000 Sqft
+                                        </li>
+                                    </ul>
+                                    <ul class="property-category d-flex justify-content-between align-items-center">
+                                        <li class="user-info">
+                                            <a [routerLink]="routes.agentGrid"><img
+                                                    src="assets/img/profiles/avatar-07.jpg" class="img-fluid avatar"
+                                                    alt="User"></a>
+                                            <div class="user-name">
+                                                <a [routerLink]="routes.agentGrid">Pittman</a>
+                                                <p>Cambridge</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a [routerLink]="routes.rentDetails" class="btn-primary">Book Now</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Rent grid -->
+
+                </div>
+
+                <!-- Pagination -->
+                <div class="col-lg-12">
+                    <div class="grid-pagination">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item prev">
+                                <a class="page-link" href="javascript:void(0);"><i class="fa-solid fa-arrow-left"></i>
+                                    Prev</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="javascript:void(0);">1</a>
+                            </li>
+                            <li class="page-item active">
+                                <a class="page-link" href="javascript:void(0);">2</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="javascript:void(0);">3</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="javascript:void(0);">4</a>
+                            </li>
+                            <li class="page-item next">
+                                <a class="page-link" href="javascript:void(0);">Next <i
+                                        class="fa-solid fa-arrow-right"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /Pagination -->
+
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- /Feature Property For Rent -->

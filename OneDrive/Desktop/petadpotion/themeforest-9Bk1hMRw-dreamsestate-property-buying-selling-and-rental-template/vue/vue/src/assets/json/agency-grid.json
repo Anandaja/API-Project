@@ -1,0 +1,62 @@
+[
+    {
+        "Listing": "30 Listings",
+        "Star": "5.0",
+        "Reviews": "(20 Reviews)",
+        "Name": "Luxurios Estate",
+        "Location": "New York, Queens",
+        "Image": "property-01.png",
+        "Class": "fa-solid fa-star checked",
+        "Class1": "fa-solid fa-star checked"
+    },
+    {
+        "Listing": "70 Listings",
+        "Star": "4.0",
+        "Reviews": "(12 Reviews)",
+        "Name": "Green Reality",
+        "Location": "City Center, Manhattan",
+        "Image": "property-02.png",
+        "Class": "fa-solid fa-star checked",
+        "Class1": "fa-solid fa-star"
+    },
+    {
+        "Listing": "50 Listings",
+        "Star": "3.0",
+        "Reviews": "(10 Reviews)",
+        "Name": "Homes",
+        "Location": "Las Vegas",
+        "Image": "property-03.png",
+        "Class": "fa-solid fa-star",
+        "Class1": "fa-solid fa-star"
+    },
+    {
+        "Listing": "55 Listings",
+        "Star": "5.0",
+        "Reviews": "(15 Reviews)",
+        "Name": "Queen Estate",
+        "Location": "Pawnee City, NE",
+        "Image": "property-05.png",
+        "Class": "fa-solid fa-star checked",
+        "Class1": "fa-solid fa-star checked"
+    },
+    {
+        "Listing": "44 Listings",
+        "Star": "5.0",
+        "Reviews": "(23 Reviews)",
+        "Name": "Rent a Home",
+        "Location": "Barron, WI",
+        "Image": "property-04.png",
+        "Class": "fa-solid fa-star checked",
+        "Class1": "fa-solid fa-star checked"
+    },
+    {
+        "Listing": "30 Listings",
+        "Star": "5.0",
+        "Reviews": "(25 Reviews)",
+        "Name": "Louis Realtors",
+        "Location": "Correll, MN",
+        "Image": "property-06.png",
+        "Class": "fa-solid fa-star checked",
+        "Class1": "fa-solid fa-star checked"
+    }
+]
